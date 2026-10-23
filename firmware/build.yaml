@@ -1,0 +1,4 @@
+# Firmware targets (same format as ZMK's GitHub Actions builds).
+include:
+  - board: deck8//zmk
+    snippet: studio-rpc-usb-uart

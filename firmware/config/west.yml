@@ -1,0 +1,12 @@
+# ZMK pinned to the main commit Deck-8 was built and tested against (Zephyr 4.1, hardware model v2).
+manifest:
+  remotes:
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+  projects:
+    - name: zmk
+      remote: zmkfirmware
+      revision: 4dd95d7840eb3d5a3f59bb29fbf1ab054715ef85
+      import: app/west.yml
+  self:
+    path: config

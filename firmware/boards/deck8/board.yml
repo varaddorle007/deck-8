@@ -1,0 +1,6 @@
+board:
+  name: deck8
+  socs:
+    - name: nrf52840
+      variants:
+        - name: zmk

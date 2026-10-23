@@ -1,0 +1,13 @@
+if BOARD_DECK8
+
+config ZMK_KEYBOARD_NAME
+    default "Deck-8"
+
+if USB_DEVICE_STACK
+
+config USB_NRFX
+    default y
+
+endif # USB_DEVICE_STACK
+
+endif # BOARD_DECK8

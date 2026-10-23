@@ -1,0 +1,1152 @@
+{
+ "#FLG01": {
+  "footprint": "",
+  "lib": "power:PWR_FLAG",
+  "pins": {
+   "1": "VBUS"
+  },
+  "sheet": "Power",
+  "value": "PWR_FLAG"
+ },
+ "#FLG02": {
+  "footprint": "",
+  "lib": "power:PWR_FLAG",
+  "pins": {
+   "1": "GND"
+  },
+  "sheet": "Power",
+  "value": "PWR_FLAG"
+ },
+ "#FLG03": {
+  "footprint": "",
+  "lib": "power:PWR_FLAG",
+  "pins": {
+   "1": "+3V3"
+  },
+  "sheet": "Power",
+  "value": "PWR_FLAG"
+ },
+ "#FLG04": {
+  "footprint": "",
+  "lib": "power:PWR_FLAG",
+  "pins": {
+   "1": "VLED"
+  },
+  "sheet": "Power",
+  "value": "PWR_FLAG"
+ },
+ "C1": {
+  "footprint": "Capacitor_SMD:C_0603_1608Metric",
+  "lib": "Device:C",
+  "pins": {
+   "1": "VBUS",
+   "2": "GND"
+  },
+  "sheet": "Power",
+  "value": "1u 25V"
+ },
+ "C10": {
+  "footprint": "Capacitor_SMD:C_0603_1608Metric",
+  "lib": "Device:C",
+  "pins": {
+   "1": "+3V3",
+   "2": "GND"
+  },
+  "sheet": "MCU",
+  "value": "10u 10V"
+ },
+ "C11": {
+  "footprint": "Capacitor_SMD:C_0603_1608Metric",
+  "lib": "Device:C",
+  "pins": {
+   "1": "+3V3",
+   "2": "GND"
+  },
+  "sheet": "MCU",
+  "value": "100n"
+ },
+ "C12": {
+  "footprint": "Capacitor_SMD:C_0603_1608Metric",
+  "lib": "Device:C",
+  "pins": {
+   "1": "VBUS",
+   "2": "GND"
+  },
+  "sheet": "MCU",
+  "value": "4.7u 10V"
+ },
+ "C13": {
+  "footprint": "Capacitor_SMD:C_0603_1608Metric",
+  "lib": "Device:C",
+  "pins": {
+   "1": "XL1",
+   "2": "GND"
+  },
+  "sheet": "MCU",
+  "value": "12p"
+ },
+ "C14": {
+  "footprint": "Capacitor_SMD:C_0603_1608Metric",
+  "lib": "Device:C",
+  "pins": {
+   "1": "XL2",
+   "2": "GND"
+  },
+  "sheet": "MCU",
+  "value": "12p"
+ },
+ "C15": {
+  "footprint": "Capacitor_SMD:C_0603_1608Metric",
+  "lib": "Device:C",
+  "pins": {
+   "1": "VLED",
+   "2": "GND"
+  },
+  "sheet": "Lighting",
+  "value": "100n"
+ },
+ "C16": {
+  "footprint": "Capacitor_SMD:C_0603_1608Metric",
+  "lib": "Device:C",
+  "pins": {
+   "1": "VLED",
+   "2": "GND"
+  },
+  "sheet": "Lighting",
+  "value": "100n"
+ },
+ "C17": {
+  "footprint": "Capacitor_SMD:C_0603_1608Metric",
+  "lib": "Device:C",
+  "pins": {
+   "1": "VLED",
+   "2": "GND"
+  },
+  "sheet": "Lighting",
+  "value": "100n"
+ },
+ "C18": {
+  "footprint": "Capacitor_SMD:C_0603_1608Metric",
+  "lib": "Device:C",
+  "pins": {
+   "1": "VLED",
+   "2": "GND"
+  },
+  "sheet": "Lighting",
+  "value": "100n"
+ },
+ "C19": {
+  "footprint": "Capacitor_SMD:C_0603_1608Metric",
+  "lib": "Device:C",
+  "pins": {
+   "1": "VLED",
+   "2": "GND"
+  },
+  "sheet": "Lighting",
+  "value": "100n"
+ },
+ "C2": {
+  "footprint": "Capacitor_SMD:C_0603_1608Metric",
+  "lib": "Device:C",
+  "pins": {
+   "1": "VSYS",
+   "2": "GND"
+  },
+  "sheet": "Power",
+  "value": "10u 10V"
+ },
+ "C20": {
+  "footprint": "Capacitor_SMD:C_0603_1608Metric",
+  "lib": "Device:C",
+  "pins": {
+   "1": "VLED",
+   "2": "GND"
+  },
+  "sheet": "Lighting",
+  "value": "100n"
+ },
+ "C21": {
+  "footprint": "Capacitor_SMD:C_0603_1608Metric",
+  "lib": "Device:C",
+  "pins": {
+   "1": "VLED",
+   "2": "GND"
+  },
+  "sheet": "Lighting",
+  "value": "100n"
+ },
+ "C22": {
+  "footprint": "Capacitor_SMD:C_0603_1608Metric",
+  "lib": "Device:C",
+  "pins": {
+   "1": "VLED",
+   "2": "GND"
+  },
+  "sheet": "Lighting",
+  "value": "100n"
+ },
+ "C23": {
+  "footprint": "Capacitor_SMD:C_0603_1608Metric",
+  "lib": "Device:C",
+  "pins": {
+   "1": "VLED",
+   "2": "GND"
+  },
+  "sheet": "Lighting",
+  "value": "100n"
+ },
+ "C24": {
+  "footprint": "Capacitor_SMD:C_0603_1608Metric",
+  "lib": "Device:C",
+  "pins": {
+   "1": "VLED",
+   "2": "GND"
+  },
+  "sheet": "Lighting",
+  "value": "100n"
+ },
+ "C25": {
+  "footprint": "Capacitor_SMD:C_1206_3216Metric",
+  "lib": "Device:C",
+  "pins": {
+   "1": "VLED",
+   "2": "GND"
+  },
+  "sheet": "Lighting",
+  "value": "100u 6.3V"
+ },
+ "C26": {
+  "footprint": "Capacitor_SMD:C_0603_1608Metric",
+  "lib": "Device:C",
+  "pins": {
+   "1": "+3V3",
+   "2": "GND"
+  },
+  "sheet": "Display",
+  "value": "10u 10V"
+ },
+ "C27": {
+  "footprint": "Capacitor_SMD:C_0603_1608Metric",
+  "lib": "Device:C",
+  "pins": {
+   "1": "+3V3",
+   "2": "GND"
+  },
+  "sheet": "Display",
+  "value": "100n"
+ },
+ "C3": {
+  "footprint": "Capacitor_SMD:C_0603_1608Metric",
+  "lib": "Device:C",
+  "pins": {
+   "1": "VBAT",
+   "2": "GND"
+  },
+  "sheet": "Power",
+  "value": "4.7u 10V"
+ },
+ "C4": {
+  "footprint": "Capacitor_SMD:C_0603_1608Metric",
+  "lib": "Device:C",
+  "pins": {
+   "1": "BAT_SENSE",
+   "2": "GND"
+  },
+  "sheet": "Power",
+  "value": "100n"
+ },
+ "C5": {
+  "footprint": "Capacitor_SMD:C_0603_1608Metric",
+  "lib": "Device:C",
+  "pins": {
+   "1": "VSYS",
+   "2": "GND"
+  },
+  "sheet": "Power",
+  "value": "1u 10V"
+ },
+ "C6": {
+  "footprint": "Capacitor_SMD:C_0603_1608Metric",
+  "lib": "Device:C",
+  "pins": {
+   "1": "3V3_LDO",
+   "2": "GND"
+  },
+  "sheet": "Power",
+  "value": "2.2u 10V"
+ },
+ "C7": {
+  "footprint": "Capacitor_SMD:C_0603_1608Metric",
+  "lib": "Device:C",
+  "pins": {
+   "1": "VSYS",
+   "2": "GND"
+  },
+  "sheet": "Power",
+  "value": "1u 10V"
+ },
+ "C8": {
+  "footprint": "Capacitor_SMD:C_0603_1608Metric",
+  "lib": "Device:C",
+  "pins": {
+   "1": "LED_CT",
+   "2": "GND"
+  },
+  "sheet": "Power",
+  "value": "1n"
+ },
+ "C9": {
+  "footprint": "Capacitor_SMD:C_0603_1608Metric",
+  "lib": "Device:C",
+  "pins": {
+   "1": "VLED",
+   "2": "GND"
+  },
+  "sheet": "Power",
+  "value": "10u 10V"
+ },
+ "D1": {
+  "footprint": "LED_SMD:LED_SK6812MINI-E_3.2x2.8mm_P1.5mm_ReverseMount",
+  "lib": "LED:SK6812MINI-E",
+  "pins": {
+   "1": "GND",
+   "2": "KEYLED_D1",
+   "3": "VLED",
+   "4": null
+  },
+  "sheet": "Lighting",
+  "value": "SK6812MINI-E"
+ },
+ "D2": {
+  "footprint": "LED_SMD:LED_SK6812MINI-E_3.2x2.8mm_P1.5mm_ReverseMount",
+  "lib": "LED:SK6812MINI-E",
+  "pins": {
+   "1": "GND",
+   "2": "KEYLED_D2",
+   "3": "VLED",
+   "4": "KEYLED_D1"
+  },
+  "sheet": "Lighting",
+  "value": "SK6812MINI-E"
+ },
+ "D3": {
+  "footprint": "LED_SMD:LED_SK6812MINI-E_3.2x2.8mm_P1.5mm_ReverseMount",
+  "lib": "LED:SK6812MINI-E",
+  "pins": {
+   "1": "GND",
+   "2": "KEYLED_D3",
+   "3": "VLED",
+   "4": "KEYLED_D2"
+  },
+  "sheet": "Lighting",
+  "value": "SK6812MINI-E"
+ },
+ "D4": {
+  "footprint": "LED_SMD:LED_SK6812MINI-E_3.2x2.8mm_P1.5mm_ReverseMount",
+  "lib": "LED:SK6812MINI-E",
+  "pins": {
+   "1": "GND",
+   "2": "KEYLED_D4",
+   "3": "VLED",
+   "4": "KEYLED_D3"
+  },
+  "sheet": "Lighting",
+  "value": "SK6812MINI-E"
+ },
+ "D5": {
+  "footprint": "LED_SMD:LED_SK6812MINI-E_3.2x2.8mm_P1.5mm_ReverseMount",
+  "lib": "LED:SK6812MINI-E",
+  "pins": {
+   "1": "GND",
+   "2": "KEYLED_D5",
+   "3": "VLED",
+   "4": "KEYLED_D6"
+  },
+  "sheet": "Lighting",
+  "value": "SK6812MINI-E"
+ },
+ "D6": {
+  "footprint": "LED_SMD:LED_SK6812MINI-E_3.2x2.8mm_P1.5mm_ReverseMount",
+  "lib": "LED:SK6812MINI-E",
+  "pins": {
+   "1": "GND",
+   "2": "KEYLED_D6",
+   "3": "VLED",
+   "4": "KEYLED_D7"
+  },
+  "sheet": "Lighting",
+  "value": "SK6812MINI-E"
+ },
+ "D7": {
+  "footprint": "LED_SMD:LED_SK6812MINI-E_3.2x2.8mm_P1.5mm_ReverseMount",
+  "lib": "LED:SK6812MINI-E",
+  "pins": {
+   "1": "GND",
+   "2": "KEYLED_D7",
+   "3": "VLED",
+   "4": "KEYLED_D8"
+  },
+  "sheet": "Lighting",
+  "value": "SK6812MINI-E"
+ },
+ "D8": {
+  "footprint": "LED_SMD:LED_SK6812MINI-E_3.2x2.8mm_P1.5mm_ReverseMount",
+  "lib": "LED:SK6812MINI-E",
+  "pins": {
+   "1": "GND",
+   "2": "KEYLED_D8",
+   "3": "VLED",
+   "4": "KEYLED_D4"
+  },
+  "sheet": "Lighting",
+  "value": "SK6812MINI-E"
+ },
+ "ENC1": {
+  "footprint": "Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm",
+  "lib": "Device:RotaryEncoder_Switch",
+  "pins": {
+   "A": "ENCA_A",
+   "B": "ENCA_B",
+   "C": "GND",
+   "S1": "ENCA_SW",
+   "S2": "GND"
+  },
+  "sheet": "Inputs",
+  "value": "PEC11R-4220F-S0024"
+ },
+ "ENC2": {
+  "footprint": "Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm",
+  "lib": "Device:RotaryEncoder_Switch",
+  "pins": {
+   "A": "ENCB_A",
+   "B": "ENCB_B",
+   "C": "GND",
+   "S1": "ENCB_SW",
+   "S2": "GND"
+  },
+  "sheet": "Inputs",
+  "value": "PEC11R-4220F-S0024"
+ },
+ "F1": {
+  "footprint": "Fuse:Fuse_1206_3216Metric",
+  "lib": "Device:Polyfuse",
+  "pins": {
+   "1": "VBUS_IN",
+   "2": "VBUS"
+  },
+  "sheet": "Power",
+  "value": "500mA hold"
+ },
+ "FID1": {
+  "footprint": "Fiducial:Fiducial_1mm_Mask2mm",
+  "lib": "Mechanical:Fiducial",
+  "pins": {},
+  "sheet": "Mechanical",
+  "value": "Fiducial"
+ },
+ "FID2": {
+  "footprint": "Fiducial:Fiducial_1mm_Mask2mm",
+  "lib": "Mechanical:Fiducial",
+  "pins": {},
+  "sheet": "Mechanical",
+  "value": "Fiducial"
+ },
+ "FID3": {
+  "footprint": "Fiducial:Fiducial_1mm_Mask2mm",
+  "lib": "Mechanical:Fiducial",
+  "pins": {},
+  "sheet": "Mechanical",
+  "value": "Fiducial"
+ },
+ "H1": {
+  "footprint": "MountingHole:MountingHole_2.2mm_M2",
+  "lib": "Mechanical:MountingHole",
+  "pins": {},
+  "sheet": "Mechanical",
+  "value": "M2 boss"
+ },
+ "H2": {
+  "footprint": "MountingHole:MountingHole_2.2mm_M2",
+  "lib": "Mechanical:MountingHole",
+  "pins": {},
+  "sheet": "Mechanical",
+  "value": "M2 boss"
+ },
+ "H3": {
+  "footprint": "MountingHole:MountingHole_2.2mm_M2",
+  "lib": "Mechanical:MountingHole",
+  "pins": {},
+  "sheet": "Mechanical",
+  "value": "M2 boss"
+ },
+ "H4": {
+  "footprint": "MountingHole:MountingHole_2.2mm_M2",
+  "lib": "Mechanical:MountingHole",
+  "pins": {},
+  "sheet": "Mechanical",
+  "value": "M2 boss"
+ },
+ "J1": {
+  "footprint": "Deck8:USB_C_Receptacle_HRO_TYPE-C-31-M-12",
+  "lib": "Connector:USB_C_Receptacle_USB2.0_16P",
+  "pins": {
+   "A1": "GND",
+   "A12": "GND",
+   "A4": "VBUS_IN",
+   "A5": "CC1",
+   "A6": "USB_DP",
+   "A7": "USB_DM",
+   "A8": null,
+   "A9": "VBUS_IN",
+   "B1": "GND",
+   "B12": "GND",
+   "B4": "VBUS_IN",
+   "B5": "CC2",
+   "B6": "USB_DP",
+   "B7": "USB_DM",
+   "B8": null,
+   "B9": "VBUS_IN",
+   "SH": "GND"
+  },
+  "sheet": "Power",
+  "value": "USB-C"
+ },
+ "J2": {
+  "footprint": "Connector_JST:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal",
+  "lib": "Connector_Generic:Conn_01x02",
+  "pins": {
+   "1": "VBAT",
+   "2": "GND"
+  },
+  "sheet": "Power",
+  "value": "LiPo 1000mAh"
+ },
+ "J3": {
+  "footprint": "Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical",
+  "lib": "Connector:Conn_ARM_SWD_TagConnect_TC2030-NL",
+  "pins": {
+   "1": "+3V3",
+   "2": "SWDIO",
+   "3": "NRESET",
+   "4": "SWDCLK",
+   "5": "GND",
+   "6": null
+  },
+  "sheet": "MCU",
+  "value": "SWD"
+ },
+ "J4": {
+  "footprint": "Connector_JST:JST_SH_SM03B-SRSS-TB_1x03-1MP_P1.00mm_Horizontal",
+  "lib": "Connector_Generic:Conn_01x03",
+  "pins": {
+   "1": "VLED",
+   "2": "RING_DIN",
+   "3": "GND"
+  },
+  "sheet": "Lighting",
+  "value": "LED STRIP"
+ },
+ "J5": {
+  "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical",
+  "lib": "Connector_Generic:Conn_01x04",
+  "pins": {
+   "1": "GND",
+   "2": "+3V3",
+   "3": "I2C_SCL",
+   "4": "I2C_SDA"
+  },
+  "sheet": "Display",
+  "value": "OLED GND-VCC-SCL-SDA"
+ },
+ "K1": {
+  "footprint": "Deck8:SW_MX_Hotswap_Kailh_1u_NorthLED",
+  "lib": "Switch:SW_Push",
+  "pins": {
+   "1": "KEY1",
+   "2": "GND"
+  },
+  "sheet": "Inputs",
+  "value": "KEY1"
+ },
+ "K2": {
+  "footprint": "Deck8:SW_MX_Hotswap_Kailh_1u_NorthLED",
+  "lib": "Switch:SW_Push",
+  "pins": {
+   "1": "KEY2",
+   "2": "GND"
+  },
+  "sheet": "Inputs",
+  "value": "KEY2"
+ },
+ "K3": {
+  "footprint": "Deck8:SW_MX_Hotswap_Kailh_1u_NorthLED",
+  "lib": "Switch:SW_Push",
+  "pins": {
+   "1": "KEY3",
+   "2": "GND"
+  },
+  "sheet": "Inputs",
+  "value": "KEY3"
+ },
+ "K4": {
+  "footprint": "Deck8:SW_MX_Hotswap_Kailh_1u_NorthLED",
+  "lib": "Switch:SW_Push",
+  "pins": {
+   "1": "KEY4",
+   "2": "GND"
+  },
+  "sheet": "Inputs",
+  "value": "KEY4"
+ },
+ "K5": {
+  "footprint": "Deck8:SW_MX_Hotswap_Kailh_1u_NorthLED",
+  "lib": "Switch:SW_Push",
+  "pins": {
+   "1": "KEY5",
+   "2": "GND"
+  },
+  "sheet": "Inputs",
+  "value": "KEY5"
+ },
+ "K6": {
+  "footprint": "Deck8:SW_MX_Hotswap_Kailh_1u_NorthLED",
+  "lib": "Switch:SW_Push",
+  "pins": {
+   "1": "KEY6",
+   "2": "GND"
+  },
+  "sheet": "Inputs",
+  "value": "KEY6"
+ },
+ "K7": {
+  "footprint": "Deck8:SW_MX_Hotswap_Kailh_1u_NorthLED",
+  "lib": "Switch:SW_Push",
+  "pins": {
+   "1": "KEY7",
+   "2": "GND"
+  },
+  "sheet": "Inputs",
+  "value": "KEY7"
+ },
+ "K8": {
+  "footprint": "Deck8:SW_MX_Hotswap_Kailh_1u_NorthLED",
+  "lib": "Switch:SW_Push",
+  "pins": {
+   "1": "KEY8",
+   "2": "GND"
+  },
+  "sheet": "Inputs",
+  "value": "KEY8"
+ },
+ "R1": {
+  "footprint": "Resistor_SMD:R_0603_1608Metric",
+  "lib": "Device:R",
+  "pins": {
+   "1": "CC1",
+   "2": "GND"
+  },
+  "sheet": "Power",
+  "value": "5.1k"
+ },
+ "R10": {
+  "footprint": "Resistor_SMD:R_0603_1608Metric",
+  "lib": "Device:R",
+  "pins": {
+   "1": "VBAT",
+   "2": "BAT_SENSE"
+  },
+  "sheet": "Power",
+  "value": "1M"
+ },
+ "R11": {
+  "footprint": "Resistor_SMD:R_0603_1608Metric",
+  "lib": "Device:R",
+  "pins": {
+   "1": "BAT_SENSE",
+   "2": "GND"
+  },
+  "sheet": "Power",
+  "value": "1M"
+ },
+ "R12": {
+  "footprint": "Resistor_SMD:R_0603_1608Metric",
+  "lib": "Device:R",
+  "pins": {
+   "1": "PWR_EN",
+   "2": "GND"
+  },
+  "sheet": "Power",
+  "value": "1M"
+ },
+ "R13": {
+  "footprint": "Resistor_SMD:R_0603_1608Metric",
+  "lib": "Device:R",
+  "pins": {
+   "1": "LED_EN",
+   "2": "GND"
+  },
+  "sheet": "Power",
+  "value": "100k"
+ },
+ "R14": {
+  "footprint": "Resistor_SMD:R_0603_1608Metric",
+  "lib": "Device:R",
+  "pins": {
+   "1": "3V3_LDO",
+   "2": "+3V3"
+  },
+  "sheet": "Power",
+  "value": "0R"
+ },
+ "R15": {
+  "footprint": "Resistor_SMD:R_0603_1608Metric",
+  "lib": "Device:R",
+  "pins": {
+   "1": "VLED_SW",
+   "2": "VLED"
+  },
+  "sheet": "Power",
+  "value": "0R"
+ },
+ "R16": {
+  "footprint": "Resistor_SMD:R_0603_1608Metric",
+  "lib": "Device:R",
+  "pins": {
+   "1": "LED_KEYS_BUF",
+   "2": "KEYLED_D5"
+  },
+  "sheet": "Lighting",
+  "value": "33"
+ },
+ "R17": {
+  "footprint": "Resistor_SMD:R_0603_1608Metric",
+  "lib": "Device:R",
+  "pins": {
+   "1": "LED_RING_BUF",
+   "2": "RING_DIN"
+  },
+  "sheet": "Lighting",
+  "value": "330"
+ },
+ "R18": {
+  "footprint": "Resistor_SMD:R_0603_1608Metric",
+  "lib": "Device:R",
+  "pins": {
+   "1": "I2C_SCL",
+   "2": "+3V3"
+  },
+  "sheet": "Display",
+  "value": "4.7k"
+ },
+ "R19": {
+  "footprint": "Resistor_SMD:R_0603_1608Metric",
+  "lib": "Device:R",
+  "pins": {
+   "1": "I2C_SDA",
+   "2": "+3V3"
+  },
+  "sheet": "Display",
+  "value": "4.7k"
+ },
+ "R2": {
+  "footprint": "Resistor_SMD:R_0603_1608Metric",
+  "lib": "Device:R",
+  "pins": {
+   "1": "CC2",
+   "2": "GND"
+  },
+  "sheet": "Power",
+  "value": "5.1k"
+ },
+ "R20": {
+  "footprint": "Resistor_SMD:R_0603_1608Metric",
+  "lib": "Device:R",
+  "pins": {
+   "1": "LED_QOD",
+   "2": "VLED_SW"
+  },
+  "sheet": "Power",
+  "value": "0R"
+ },
+ "R3": {
+  "footprint": "Resistor_SMD:R_0603_1608Metric",
+  "lib": "Device:R",
+  "pins": {
+   "1": "TS",
+   "2": "GND"
+  },
+  "sheet": "Power",
+  "value": "10k"
+ },
+ "R4": {
+  "footprint": "Resistor_SMD:R_0603_1608Metric",
+  "lib": "Device:R",
+  "pins": {
+   "1": "ISET",
+   "2": "GND"
+  },
+  "sheet": "Power",
+  "value": "1.8k"
+ },
+ "R5": {
+  "footprint": "Resistor_SMD:R_0603_1608Metric",
+  "lib": "Device:R",
+  "pins": {
+   "1": "ILIM",
+   "2": "GND"
+  },
+  "sheet": "Power",
+  "value": "1.5k"
+ },
+ "R6": {
+  "footprint": "Resistor_SMD:R_0603_1608Metric",
+  "lib": "Device:R",
+  "pins": {
+   "1": "ITERM",
+   "2": "GND"
+  },
+  "sheet": "Power",
+  "value": "DNP"
+ },
+ "R7": {
+  "footprint": "Resistor_SMD:R_0603_1608Metric",
+  "lib": "Device:R",
+  "pins": {
+   "1": "TMR",
+   "2": "GND"
+  },
+  "sheet": "Power",
+  "value": "DNP"
+ },
+ "R8": {
+  "footprint": "Resistor_SMD:R_0603_1608Metric",
+  "lib": "Device:R",
+  "pins": {
+   "1": "PGOOD_N",
+   "2": "+3V3"
+  },
+  "sheet": "Power",
+  "value": "100k"
+ },
+ "R9": {
+  "footprint": "Resistor_SMD:R_0603_1608Metric",
+  "lib": "Device:R",
+  "pins": {
+   "1": "CHG_N",
+   "2": "+3V3"
+  },
+  "sheet": "Power",
+  "value": "100k"
+ },
+ "ST1": {
+  "footprint": "Mounting_Wuerth:Mounting_Wuerth_WA-SMSI-M2_H3mm_9774030243",
+  "lib": "Mechanical:MountingHole_Pad",
+  "pins": {
+   "1": "GND"
+  },
+  "sheet": "Mechanical",
+  "value": "M2x3 standoff"
+ },
+ "ST2": {
+  "footprint": "Mounting_Wuerth:Mounting_Wuerth_WA-SMSI-M2_H3mm_9774030243",
+  "lib": "Mechanical:MountingHole_Pad",
+  "pins": {
+   "1": "GND"
+  },
+  "sheet": "Mechanical",
+  "value": "M2x3 standoff"
+ },
+ "ST3": {
+  "footprint": "Mounting_Wuerth:Mounting_Wuerth_WA-SMSI-M2_H3mm_9774030243",
+  "lib": "Mechanical:MountingHole_Pad",
+  "pins": {
+   "1": "GND"
+  },
+  "sheet": "Mechanical",
+  "value": "M2x3 standoff"
+ },
+ "ST4": {
+  "footprint": "Mounting_Wuerth:Mounting_Wuerth_WA-SMSI-M2_H3mm_9774030243",
+  "lib": "Mechanical:MountingHole_Pad",
+  "pins": {
+   "1": "GND"
+  },
+  "sheet": "Mechanical",
+  "value": "M2x3 standoff"
+ },
+ "SW1": {
+  "footprint": "Deck8:SW_SPDT_PCM12",
+  "lib": "Switch:SW_SPDT",
+  "pins": {
+   "1": "VSYS",
+   "2": "PWR_EN",
+   "3": "GND"
+  },
+  "sheet": "Power",
+  "value": "POWER"
+ },
+ "SW2": {
+  "footprint": "Button_Switch_SMD:SW_SPST_PTS810",
+  "lib": "Switch:SW_Push",
+  "pins": {
+   "1": "NRESET",
+   "2": "GND"
+  },
+  "sheet": "MCU",
+  "value": "RESET"
+ },
+ "SW3": {
+  "footprint": "Button_Switch_SMD:SW_Push_1P1T-MP_NO_Horizontal_Alps_SKRTLAE010",
+  "lib": "Switch:SW_Push",
+  "pins": {
+   "1": "BTN_L1",
+   "2": "GND"
+  },
+  "sheet": "Inputs",
+  "value": "L1"
+ },
+ "SW4": {
+  "footprint": "Button_Switch_SMD:SW_Push_1P1T-MP_NO_Horizontal_Alps_SKRTLAE010",
+  "lib": "Switch:SW_Push",
+  "pins": {
+   "1": "BTN_L2",
+   "2": "GND"
+  },
+  "sheet": "Inputs",
+  "value": "L2"
+ },
+ "SW5": {
+  "footprint": "Button_Switch_SMD:SW_Push_1P1T-MP_NO_Horizontal_Alps_SKRTLAE010",
+  "lib": "Switch:SW_Push",
+  "pins": {
+   "1": "BTN_SYS",
+   "2": "GND"
+  },
+  "sheet": "Inputs",
+  "value": "SYSTEM"
+ },
+ "TP1": {
+  "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+  "lib": "Connector:TestPoint",
+  "pins": {
+   "1": "VBUS"
+  },
+  "sheet": "Power",
+  "value": "VBUS"
+ },
+ "TP2": {
+  "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+  "lib": "Connector:TestPoint",
+  "pins": {
+   "1": "VSYS"
+  },
+  "sheet": "Power",
+  "value": "VSYS"
+ },
+ "TP3": {
+  "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+  "lib": "Connector:TestPoint",
+  "pins": {
+   "1": "VBAT"
+  },
+  "sheet": "Power",
+  "value": "VBAT"
+ },
+ "TP4": {
+  "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+  "lib": "Connector:TestPoint",
+  "pins": {
+   "1": "+3V3"
+  },
+  "sheet": "Power",
+  "value": "+3V3"
+ },
+ "TP5": {
+  "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+  "lib": "Connector:TestPoint",
+  "pins": {
+   "1": "VLED"
+  },
+  "sheet": "Power",
+  "value": "VLED"
+ },
+ "TP6": {
+  "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+  "lib": "Connector:TestPoint",
+  "pins": {
+   "1": "GND"
+  },
+  "sheet": "Power",
+  "value": "GND"
+ },
+ "U1": {
+  "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+  "lib": "Power_Protection:USBLC6-2SC6",
+  "pins": {
+   "1": "USB_DP",
+   "2": "GND",
+   "3": "USB_DM",
+   "4": "USB_DM",
+   "5": "VBUS",
+   "6": "USB_DP"
+  },
+  "sheet": "Power",
+  "value": "USBLC6-2SC6"
+ },
+ "U2": {
+  "footprint": "Package_DFN_QFN:VQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm_ThermalVias",
+  "lib": "Battery_Management:BQ24074RGT",
+  "pins": {
+   "1": "TS",
+   "10": "VSYS",
+   "11": "VSYS",
+   "12": "ILIM",
+   "13": "VBUS",
+   "14": "TMR",
+   "15": "ITERM",
+   "16": "ISET",
+   "17": "GND",
+   "2": "VBAT",
+   "3": "VBAT",
+   "4": "GND",
+   "5": "GND",
+   "6": "VBUS",
+   "7": "PGOOD_N",
+   "8": "GND",
+   "9": "CHG_N"
+  },
+  "sheet": "Power",
+  "value": "BQ24074RGT"
+ },
+ "U3": {
+  "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+  "lib": "Regulator_Linear:TPS7A0533PDBV",
+  "pins": {
+   "1": "VSYS",
+   "2": "GND",
+   "3": "PWR_EN",
+   "5": "3V3_LDO"
+  },
+  "sheet": "Power",
+  "value": "TPS7A0533PDBV"
+ },
+ "U4": {
+  "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+  "lib": "Power_Management:TPS22917DBV",
+  "pins": {
+   "1": "VSYS",
+   "2": "GND",
+   "3": "LED_EN",
+   "4": "LED_CT",
+   "5": "LED_QOD",
+   "6": "VLED_SW"
+  },
+  "sheet": "Power",
+  "value": "TPS22917DBV"
+ },
+ "U5": {
+  "footprint": "Deck8:Raytac_MDBT50Q",
+  "lib": "RF_Module:MDBT50Q-1MV2",
+  "pins": {
+   "1": "GND",
+   "10": "BTN_SYS",
+   "11": "BAT_SENSE",
+   "12": "KEY4",
+   "13": "KEY3",
+   "14": "KEY8",
+   "15": "GND",
+   "16": "KEY7",
+   "17": "XL1",
+   "18": "XL2",
+   "19": "LED_EN",
+   "2": "GND",
+   "20": null,
+   "21": "LED_KEYS_3V3",
+   "22": null,
+   "23": "KEY6",
+   "24": null,
+   "25": "KEY2",
+   "26": null,
+   "27": "LED_RING_3V3",
+   "28": "+3V3",
+   "29": "KEY5",
+   "3": null,
+   "30": "+3V3",
+   "31": null,
+   "32": "VBUS",
+   "33": "GND",
+   "34": "USB_DM",
+   "35": "USB_DP",
+   "36": "KEY1",
+   "37": null,
+   "38": "I2C_SDA",
+   "39": null,
+   "4": "ENCB_B",
+   "40": "NRESET",
+   "41": null,
+   "42": "I2C_SCL",
+   "43": "BTN_L2",
+   "44": null,
+   "45": "CHG_N",
+   "46": null,
+   "47": "ENCA_SW",
+   "48": null,
+   "49": "ENCA_B",
+   "5": null,
+   "50": "ENCA_A",
+   "51": "SWDIO",
+   "52": null,
+   "53": "SWDCLK",
+   "54": null,
+   "55": "GND",
+   "56": null,
+   "57": null,
+   "58": null,
+   "59": null,
+   "6": "ENCB_SW",
+   "60": "PGOOD_N",
+   "61": "BTN_L1",
+   "7": null,
+   "8": "ENCB_A",
+   "9": null
+  },
+  "sheet": "MCU",
+  "value": "MDBT50Q-1MV2"
+ },
+ "U6": {
+  "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+  "lib": "74xGxx:74LVC1G125",
+  "pins": {
+   "1": "GND",
+   "2": "LED_KEYS_3V3",
+   "3": "GND",
+   "4": "LED_KEYS_BUF",
+   "5": "VLED"
+  },
+  "sheet": "Lighting",
+  "value": "SN74LV1T125"
+ },
+ "U7": {
+  "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+  "lib": "74xGxx:74LVC1G125",
+  "pins": {
+   "1": "GND",
+   "2": "LED_RING_3V3",
+   "3": "GND",
+   "4": "LED_RING_BUF",
+   "5": "VLED"
+  },
+  "sheet": "Lighting",
+  "value": "SN74LV1T125"
+ },
+ "Y1": {
+  "footprint": "Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm",
+  "lib": "Device:Crystal",
+  "pins": {
+   "1": "XL1",
+   "2": "XL2"
+  },
+  "sheet": "MCU",
+  "value": "32.768kHz 9pF"
+ }
+}

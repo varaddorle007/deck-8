@@ -1,0 +1,19 @@
+(version 1)
+# Stock land patterns that sit closer to their own holes than the board-wide 0.25 mm:
+# Alps SKRT side buttons (locating pegs) and Wurth SMD standoffs (centre hole inside the pad ring).
+(rule "Side-switch land patterns"
+	(constraint hole_clearance (min 0.05mm))
+	(condition "A.memberOfFootprint('SW*') && B.memberOfFootprint('SW*')"))
+(rule "SMD standoff solder ring"
+	(constraint hole_clearance (min 0mm))
+	(condition "A.memberOfFootprint('ST*') && B.memberOfFootprint('ST*')"))
+# SK6812MINI-E reverse-mount pads are 0.25 mm from their own cut-out by design.
+(rule "Reverse-mount LED cut-outs"
+	(constraint edge_clearance (min 0.2mm))
+	(condition "A.memberOfFootprint('D*') || B.memberOfFootprint('D*')"))
+# The outer-layer GND pours are extra: every GND pad already reaches the In1 plane (through-hole pads by their own
+# barrel, SMD pads by a via), so a through-hole GND pad needs just one spoke into a crowded outer pour.
+(rule "Outer GND pours: one spoke is enough"
+	(layer outer)
+	(constraint min_resolved_spokes 1)
+	(condition "A.NetName == 'GND'"))

@@ -1,0 +1,49 @@
+/*
+ * Deck-8 pin assignment (hardware/tools/gen_schematic.py MCU_PINS).
+ * The two LED chains are driven by SPIM MOSI; their SCK pins are left unassigned.
+ */
+
+&pinctrl {
+    i2c0_default: i2c0_default {
+        group1 {
+            psels = <NRF_PSEL(TWIM_SDA, 0, 16)>,
+                    <NRF_PSEL(TWIM_SCL, 0, 19)>;
+        };
+    };
+
+    i2c0_sleep: i2c0_sleep {
+        group1 {
+            psels = <NRF_PSEL(TWIM_SDA, 0, 16)>,
+                    <NRF_PSEL(TWIM_SCL, 0, 19)>;
+            low-power-enable;
+        };
+    };
+
+    /* key LEDs D1-D8: LED_KEYS_3V3 into U6 */
+    spi1_default: spi1_default {
+        group1 {
+            psels = <NRF_PSEL(SPIM_MOSI, 0, 5)>;
+        };
+    };
+
+    spi1_sleep: spi1_sleep {
+        group1 {
+            psels = <NRF_PSEL(SPIM_MOSI, 0, 5)>;
+            low-power-enable;
+        };
+    };
+
+    /* light ring strip on J4: LED_RING_3V3 into U7 */
+    spi2_default: spi2_default {
+        group1 {
+            psels = <NRF_PSEL(SPIM_MOSI, 0, 11)>;
+        };
+    };
+
+    spi2_sleep: spi2_sleep {
+        group1 {
+            psels = <NRF_PSEL(SPIM_MOSI, 0, 11)>;
+            low-power-enable;
+        };
+    };
+};

@@ -1,0 +1,22 @@
+CONFIG_ARM_MPU=y
+CONFIG_PINCTRL=y
+CONFIG_GPIO=y
+
+# UF2 bootloader layout (S140 v6), drag-and-drop updates
+CONFIG_USE_DT_CODE_PARTITION=y
+CONFIG_BUILD_OUTPUT_UF2=y
+
+# settings (BLE bonds, RGB state) in flash
+CONFIG_MPU_ALLOW_FLASH_WRITE=y
+CONFIG_NVS=y
+CONFIG_SETTINGS_NVS=y
+CONFIG_FLASH=y
+CONFIG_FLASH_PAGE_LAYOUT=y
+CONFIG_FLASH_MAP=y
+
+CONFIG_ZMK_USB=y
+CONFIG_ZMK_BLE=y
+
+# The SoC stays on its internal LDO. Turn on DC/DC (about a third less current on BLE) only after confirming the
+# MDBT50Q-1MV2 carries the DC/DC inductor: add `&reg1 { regulator-initial-mode = <NRF5X_REG_MODE_DCDC>; };` to
+# the board .dts.

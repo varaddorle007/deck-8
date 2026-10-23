@@ -1,0 +1,90 @@
+/*
+ * Deck-8 keymap.
+ *
+ *          [knob A]   [  OLED  ]   [knob B]
+ *   [L1]   [ 1 ] [ 2 ] [ 3 ] [ 4 ]
+ *   [L2]   [ 5 ] [ 6 ] [ 7 ] [ 8 ]          [SYS]
+ *
+ * Bank 1 (base)   keys F13-F20: bind them to anything in OBS, Stream Deck-style apps, or your OS shortcuts.
+ * Bank 2 (hold L1) media and editing.
+ * Bank 3 (hold L2) Ctrl+F13-F20, eight more macro slots.
+ * System (hold SYS) Bluetooth profiles, USB/BLE output, lights, bootloader.
+ *
+ * Knob A turns volume (press: mute). Knob B scrubs left/right (press: play/pause).
+ * In System, knob A sets light brightness and knob B its colour; knob B's press unlocks ZMK Studio.
+ *
+ * Positions: 0-3 keys 1-4, 4-7 keys 5-8, 8 L1, 9 L2, 10 System, 11 knob A push, 12 knob B push.
+ */
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/rgb.h>
+
+#define BANK1 0
+#define BANK2 1
+#define BANK3 2
+#define SYSTEM 3
+
+/ {
+    behaviors {
+        rgb_brt: rgb_brightness_knob {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
+        };
+
+        rgb_hue: rgb_hue_knob {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&rgb_ug RGB_HUI>, <&rgb_ug RGB_HUD>;
+        };
+    };
+
+    keymap {
+        compatible = "zmk,keymap";
+
+        bank1 {
+            display-name = "Bank 1";
+            bindings = <
+                &kp F13  &kp F14  &kp F15  &kp F16
+                &kp F17  &kp F18  &kp F19  &kp F20
+                &mo BANK2  &mo BANK3  &mo SYSTEM
+                &kp C_MUTE  &kp C_PP
+            >;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp RIGHT LEFT>;
+        };
+
+        bank2 {
+            display-name = "Media";
+            bindings = <
+                &kp C_PREV   &kp C_PP     &kp C_NEXT   &kp C_MUTE
+                &kp LC(Z)    &kp LC(Y)    &kp LC(C)    &kp LC(V)
+                &trans  &trans  &trans
+                &trans  &trans
+            >;
+        };
+
+        bank3 {
+            display-name = "Bank 3";
+            bindings = <
+                &kp LC(F13)  &kp LC(F14)  &kp LC(F15)  &kp LC(F16)
+                &kp LC(F17)  &kp LC(F18)  &kp LC(F19)  &kp LC(F20)
+                &trans  &trans  &trans
+                &trans  &trans
+            >;
+        };
+
+        system {
+            display-name = "System";
+            bindings = <
+                &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2      &bt BT_SEL 3
+                &bt BT_CLR       &out OUT_TOG     &rgb_ug RGB_TOG   &rgb_ug RGB_EFF
+                &bootloader  &sys_reset  &trans
+                &rgb_ug RGB_SAI  &studio_unlock
+            >;
+            sensor-bindings = <&rgb_brt &rgb_hue>;
+        };
+    };
+};

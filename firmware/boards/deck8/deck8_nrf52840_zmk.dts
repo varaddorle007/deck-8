@@ -1,0 +1,199 @@
+/*
+ * Deck-8 Rev A
+ *
+ * Raytac MDBT50Q-1MV2 (nRF52840), normal voltage mode (VDD = VDDH = 3.3 V from the TPS7A0533), 32.768 kHz crystal.
+ * Flash layout matches the Adafruit nRF52 UF2 bootloader with SoftDevice S140 v6 (as on the nice!nano), so the
+ * same bootloader hex works and firmware updates are drag-and-drop UF2 over USB.
+ */
+
+/dts-v1/;
+#include <nordic/nrf52840_qiaa.dtsi>
+#include <common/nordic/nrf52840_partition_uf2_sdv6.dtsi>
+#include <common/nordic/nrf52840_uf2_boot_mode.dtsi>
+
+#include <dt-bindings/led/led.h>
+#include <dt-bindings/zmk/matrix_transform.h>
+
+#include "deck8-pinctrl.dtsi"
+#include "deck8-layout.dtsi"
+
+/ {
+    model = "Deck-8 Rev A";
+    compatible = "deck8,deck8";
+
+    chosen {
+        zmk,kscan = &kscan0;
+        zmk,physical-layout = &deck8_layout;
+        zmk,battery = &vbatt;
+        zmk,underglow = &all_leds;
+        zephyr,display = &oled;
+    };
+
+    default_transform: keymap_transform_0 {
+        compatible = "zmk,matrix-transform";
+        rows = <1>;
+        columns = <13>;
+        map = <
+            RC(0,0) RC(0,1) RC(0,2) RC(0,3)
+            RC(0,4) RC(0,5) RC(0,6) RC(0,7)
+            RC(0,8) RC(0,9) RC(0,10) RC(0,11) RC(0,12)
+        >;
+    };
+
+    /* every input has its own pin to GND and uses the internal pull-up */
+    kscan0: kscan {
+        compatible = "zmk,kscan-gpio-direct";
+        wakeup-source;
+        input-gpios
+            = <&gpio0 14 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>    /* K1  key 1 */
+            , <&gpio1  8 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>    /* K2  key 2 */
+            , <&gpio0 28 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>    /* K3  key 3 */
+            , <&gpio0 31 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>    /* K4  key 4 */
+            , <&gpio0 12 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>    /* K5  key 5 */
+            , <&gpio0  7 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>    /* K6  key 6 */
+            , <&gpio0 27 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>    /* K7  key 7 */
+            , <&gpio0 30 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>    /* K8  key 8 */
+            , <&gpio1  1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>    /* SW3 L1 */
+            , <&gpio0 21 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>    /* SW4 L2 */
+            , <&gpio0 29 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>    /* SW5 System */
+            , <&gpio1  0 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>    /* ENC1 push */
+            , <&gpio1 13 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>    /* ENC2 push */
+            ;
+    };
+
+    /* Bourns PEC11R-4220F-S0024: 24 detents, 24 pulses per turn */
+    enc_a: encoder_a {
+        compatible = "alps,ec11";
+        a-gpios = <&gpio1  2 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&gpio0 25 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        steps = <96>;
+    };
+
+    enc_b: encoder_b {
+        compatible = "alps,ec11";
+        a-gpios = <&gpio1 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&gpio1 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        steps = <96>;
+    };
+
+    sensors: sensors {
+        compatible = "zmk,keymap-sensors";
+        sensors = <&enc_a &enc_b>;
+        triggers-per-rotation = <24>;
+    };
+
+    /* TPS22917 (U4) switches VSYS onto VLED for both LED chains; R13 holds it off while the MCU is off.
+     * Node name must stay "EXT_POWER" to match ZMK's saved setting. */
+    EXT_POWER {
+        compatible = "zmk,ext-power-generic";
+        control-gpios = <&gpio0 26 GPIO_ACTIVE_HIGH>;
+        init-delay-ms = <10>;
+    };
+
+    /* BAT_SENSE on AIN0 (P0.02): R10 1 M from VBAT over R11 1 M to GND, C4 100 nF holds it for the ADC */
+    vbatt: vbatt {
+        compatible = "zmk,battery-voltage-divider";
+        io-channels = <&adc 0>;
+        output-ohms = <1000000>;
+        full-ohms = <2000000>;
+    };
+
+    /* Key LEDs first (D1-D8 in chain order 5-6-7-8-4-3-2-1), then the ring, so effects run across both. */
+    all_leds: led_chain {
+        compatible = "deck8,led-strip-chain";
+        strips = <&key_leds &ring_leds>;
+        chain-length = <25>;   /* 8 + ring_leds chain-length */
+    };
+};
+
+&adc {
+    status = "okay";
+};
+
+&gpiote {
+    status = "okay";
+};
+
+&gpio0 {
+    status = "okay";
+};
+
+&gpio1 {
+    status = "okay";
+};
+
+/* RESET on P0.18: SW2 (double press for the bootloader) and the Tag-Connect */
+&uicr {
+    gpio-as-nreset;
+};
+
+&i2c0 {
+    compatible = "nordic,nrf-twim";
+    status = "okay";
+    pinctrl-0 = <&i2c0_default>;
+    pinctrl-1 = <&i2c0_sleep>;
+    pinctrl-names = "default", "sleep";
+    clock-frequency = <I2C_BITRATE_FAST>;
+
+    /* 0.96 in 128x64 SSD1306 on J5. Its header row faces the keys, so the module sits 180 deg from the usual
+     * pins-on-top way; if the picture comes out upside down, add segment-remap and com-invdir. */
+    oled: ssd1306@3c {
+        compatible = "solomon,ssd1306fb";
+        reg = <0x3c>;
+        width = <128>;
+        height = <64>;
+        segment-offset = <0>;
+        page-offset = <0>;
+        display-offset = <0>;
+        multiplex-ratio = <63>;
+        prechargep = <0x22>;
+        inversion-on;
+    };
+};
+
+&spi1 {
+    compatible = "nordic,nrf-spim";
+    status = "okay";
+    pinctrl-0 = <&spi1_default>;
+    pinctrl-1 = <&spi1_sleep>;
+    pinctrl-names = "default", "sleep";
+
+    /* D1-D8 SK6812MINI-E, through U6 */
+    key_leds: ws2812@0 {
+        compatible = "worldsemi,ws2812-spi";
+        reg = <0>;
+        spi-max-frequency = <4000000>;
+        chain-length = <8>;
+        spi-one-frame = <0x70>;
+        spi-zero-frame = <0x40>;
+        color-mapping = <LED_COLOR_ID_GREEN LED_COLOR_ID_RED LED_COLOR_ID_BLUE>;
+    };
+};
+
+&spi2 {
+    compatible = "nordic,nrf-spim";
+    status = "okay";
+    pinctrl-0 = <&spi2_default>;
+    pinctrl-1 = <&spi2_sleep>;
+    pinctrl-names = "default", "sleep";
+
+    /* light ring: 5 mm SK6812 strip on J4, about 293 mm round the light wall = 17 LEDs at 60/m.
+     * Change chain-length here and in all_leds if your strip has a different count. */
+    ring_leds: ws2812@0 {
+        compatible = "worldsemi,ws2812-spi";
+        reg = <0>;
+        spi-max-frequency = <4000000>;
+        chain-length = <17>;
+        spi-one-frame = <0x70>;
+        spi-zero-frame = <0x40>;
+        color-mapping = <LED_COLOR_ID_GREEN LED_COLOR_ID_RED LED_COLOR_ID_BLUE>;
+    };
+};
+
+zephyr_udc0: &usbd {
+    status = "okay";
+};
+
+&deck8_layout {
+    transform = <&default_transform>;
+};

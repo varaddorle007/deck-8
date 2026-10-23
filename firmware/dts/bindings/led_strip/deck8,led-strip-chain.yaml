@@ -1,0 +1,16 @@
+description: |
+  Several LED strips shown as one strip, in the order listed. Pixel 0 of the chain is pixel 0 of the
+  first strip; the next strip starts where the previous one ends. Lets ZMK's underglow, which drives a
+  single strip, run its effects across LEDs on separate data pins.
+
+compatible: "deck8,led-strip-chain"
+
+properties:
+  strips:
+    type: phandles
+    required: true
+    description: The strips, in pixel order.
+  chain-length:
+    type: int
+    required: true
+    description: Total number of pixels; must equal the sum of the strips' chain-length.

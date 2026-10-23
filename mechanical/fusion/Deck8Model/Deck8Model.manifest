@@ -1,0 +1,10 @@
+{
+	"autodeskProduct": "Fusion",
+	"type": "script",
+	"author": "Deck-8",
+	"description": {
+		"": "Builds the Deck-8 Rev A enclosure, light ring, knobs and reference parts"
+	},
+	"supportedOS": "windows|mac",
+	"editEnabled": true
+}

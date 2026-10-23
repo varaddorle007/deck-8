@@ -1,0 +1,18 @@
+config DECK8_LED_STRIP_CHAIN
+    bool "Drive several LED strips as one"
+    default y
+    depends on DT_HAS_DECK8_LED_STRIP_CHAIN_ENABLED
+    depends on LED_STRIP
+
+config DECK8_RGB_BATTERY_GUARD
+    bool "Turn the RGB off when the battery is too low for the LEDs"
+    default y
+    depends on ZMK_RGB_UNDERGLOW && ZMK_BATTERY_REPORTING
+    help
+      SK6812 LEDs need about 3.7 V. Off USB, VLED is the battery voltage, so below the threshold the
+      colours go wrong before the cell is empty. The guard switches the RGB off then; turn it back on by hand.
+
+config DECK8_RGB_BATTERY_GUARD_MV
+    int "Battery voltage below which the RGB is switched off (mV)"
+    default 3700
+    depends on DECK8_RGB_BATTERY_GUARD

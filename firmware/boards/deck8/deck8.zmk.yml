@@ -1,0 +1,14 @@
+file_format: "1"
+id: deck8//zmk
+name: Deck-8
+type: board
+arch: arm
+features:
+  - keys
+  - encoder
+  - display
+  - underglow
+  - studio
+outputs:
+  - usb
+  - ble

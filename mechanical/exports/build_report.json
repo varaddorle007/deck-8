@@ -1,0 +1,2107 @@
+{
+ "errors": [],
+ "warnings": [],
+ "steps": [
+  [
+   "top_shell",
+   1.09
+  ],
+  [
+   "light_ring",
+   0.36
+  ],
+  [
+   "bottom_tray",
+   1.51
+  ],
+  [
+   "knobs",
+   0.3
+  ],
+  [
+   "buttons",
+   0.64
+  ],
+  [
+   "lens",
+   0.17
+  ],
+  [
+   "plate",
+   0.47
+  ],
+  [
+   "reference_parts",
+   3.71
+  ],
+  [
+   "fasteners",
+   2.21
+  ],
+  [
+   "kicad_pcb",
+   9.17
+  ],
+  [
+   "looks",
+   1.42
+  ],
+  [
+   "measure",
+   0.47
+  ],
+  [
+   "interference",
+   1.67
+  ],
+  [
+   "export",
+   1.27
+  ],
+  [
+   "images",
+   5.55
+  ]
+ ],
+ "appearances": {
+  "shell": "Aluminum - Anodized Rough (Grey)",
+  "ring": "Plastic - Translucent Matte (White)",
+  "tray": "Plastic - Matte (Black)",
+  "knob": "Aluminum - Anodized Rough (Grey)",
+  "buttons": "Aluminum - Anodized Glossy (Grey)",
+  "lens": "Plastic - Translucent Glossy (Gray)",
+  "plate": "Plastic - Matte (Black)",
+  "pcb": "Plastic - Glossy (Black)",
+  "encoders": "Stainless Steel - Satin",
+  "oled glass": "Plastic - Glossy (Black)",
+  "oled board": "Plastic - Matte (Black)",
+  "battery": "Plastic - Glossy (Black)",
+  "strip": "LED (Blue)",
+  "keycap 1": "Plastic - Translucent Matte (White)",
+  "keycap 2": "Plastic - Translucent Matte (White)",
+  "keycap 3": "Plastic - Translucent Matte (White)",
+  "keycap 4": "Plastic - Translucent Matte (White)"
+ },
+ "materials": {
+  "shell": "Aluminum 6061",
+  "ring": "Polycarbonate, Clear",
+  "tray": "ABS Plastic",
+  "knob": "Aluminum 6061"
+ },
+ "debug": {},
+ "design_intent": "2",
+ "parameters": {
+  "case_w": 98.0,
+  "case_d": 84.0,
+  "front_y": 32.0,
+  "h_front": 18.0,
+  "h_back": 30.0,
+  "skin": 2.0,
+  "bevel": 3.0000000000000004,
+  "ch_back": 10.0,
+  "ch_front": 4.0,
+  "tray_t": 1.5000000000000002,
+  "ring_h": 4.0,
+  "ring_t": 2.5,
+  "mix_gap": 4.3,
+  "strip_t": 1.2,
+  "lwall_t": 1.5000000000000002,
+  "lwall_h": 6.000000000000001,
+  "fit_slide": 0.20000000000000004,
+  "fit_press": 0.10000000000000002,
+  "knob_d": 20.0,
+  "knob_h": 16.0,
+  "knob_ch": 0.6,
+  "bore_d": 6.1,
+  "bore_flat": 4.55,
+  "cbore_d": 11.0,
+  "cbore_h": 4.5,
+  "knob_wall": 3.0000000000000004,
+  "knurl_n": 40.0,
+  "knurl_dp": 0.5
+ },
+ "wall_notches": 2,
+ "fasteners": [
+  {
+   "where": "H1 shell boss",
+   "part": "M2 x 5 wafer head (head 4.5 x 0.8 mm) + M2 x 3 heat-set insert"
+  },
+  {
+   "where": "H2 shell boss",
+   "part": "M2 x 5 wafer head (head 4.5 x 0.8 mm) + M2 x 3 heat-set insert"
+  },
+  {
+   "where": "H3 shell boss",
+   "part": "M2 x 5 wafer head (head 4.5 x 0.8 mm) + M2 x 3 heat-set insert"
+  },
+  {
+   "where": "H4 shell boss",
+   "part": "M2 x 5 wafer head (head 4.5 x 0.8 mm) + M2 x 3 heat-set insert"
+  },
+  {
+   "where": "ST1 tray boss",
+   "part": "M2 x 6 pan head",
+   "clamp_mm": 3.69,
+   "into_standoff_mm": 2.31,
+   "head_low_point_z_mm": 0.78
+  },
+  {
+   "where": "ST2 tray boss",
+   "part": "M2 x 6 pan head",
+   "clamp_mm": 3.69,
+   "into_standoff_mm": 2.31,
+   "head_low_point_z_mm": 0.78
+  },
+  {
+   "where": "ST3 tray boss",
+   "part": "M2 x 12 pan head",
+   "clamp_mm": 9.97,
+   "into_standoff_mm": 2.03,
+   "head_low_point_z_mm": 0.78
+  },
+  {
+   "where": "ST4 tray boss",
+   "part": "M2 x 12 pan head",
+   "clamp_mm": 9.97,
+   "into_standoff_mm": 2.03,
+   "head_low_point_z_mm": 0.78
+  }
+ ],
+ "kicad_fit": {
+  "step_board_box_mm": [
+   -46.8,
+   -28.5,
+   46.0,
+   47.5,
+   0.0,
+   1.51
+  ],
+  "placed_board_world_mm": [
+   -46.8,
+   -26.94,
+   8.14,
+   46.0,
+   48.51,
+   20.38
+  ],
+  "bodies": 106,
+  "board_faces_v_mm": [
+   -10.51,
+   -9.0
+  ],
+  "board_top_target_v_mm": -9.0,
+  "reference_pcb_world_mm": [
+   -46.0,
+   -26.94,
+   8.06,
+   46.0,
+   48.52,
+   20.35
+  ],
+  "envelopes": {
+   "body": 14,
+   "plug": 2
+  }
+ },
+ "library_sizes": {
+  "appearances": 176,
+  "materials": 356
+ },
+ "appearance_names": [
+  "a type bulb - frosted - 1500lm",
+  "a type bulb - frosted - 800lm",
+  "abs (white)",
+  "acetal resin (white)",
+  "acrylic (clear)",
+  "acrylic (red)",
+  "air",
+  "aluminum - anodized glossy (blue)",
+  "aluminum - anodized glossy (grey)",
+  "aluminum - anodized glossy (red)",
+  "aluminum - anodized rough (blue)",
+  "aluminum - anodized rough (grey)",
+  "aluminum - anodized rough (red)",
+  "aluminum - bead blasted",
+  "aluminum - polished",
+  "aluminum - satin",
+  "aluminum hexagonal mesh",
+  "aluminum mesh - expanded thick",
+  "aluminum nitride (aln)",
+  "bamboo light - semigloss",
+  "base material - glazing",
+  "base material - layered",
+  "base material - metal",
+  "base material - opaque",
+  "base material - transparent",
+  "brass - matte",
+  "brass - polished",
+  "bronze - patina",
+  "bronze - polished",
+  "carbon fiber - plain",
+  "cherry",
+  "chrome",
+  "chrome - black",
+  "coating - black oxide",
+  "coating -titanium nitride",
+  "copper - patina",
+  "copper - polished",
+  "copper - raw",
+  "epx 150 - air baked (with carbon m2 m3 l1 3d printers)",
+  "epx 82 (with carbon m2 m3 l1 3d printers)",
+  "epx 86fr (with carbon m2 m3 l1 3d printers)",
+  "fabric (grey)",
+  "fabric (light brown)",
+  "fabric (white)",
+  "fr4",
+  "gemstone - crystal",
+  "gemstone - diamond",
+  "gemstone - emerald",
+  "gemstone - ruby",
+  "gemstone - sapphire",
+  "glass (blue)",
+  "glass (bronze)",
+  "glass (clear)",
+  "glass (green)",
+  "glass (grey)",
+  "glass (red)",
+  "glass - frosted",
+  "glass - frosted light",
+  "glass - frosted medium",
+  "glass - heavy color",
+  "glass - heavy color (blue)",
+  "glass - light color",
+  "glass - light color (blue)",
+  "glass - medium color",
+  "glass - medium color (blue)",
+  "glass - window",
+  "gold - polished",
+  "granite - black and white",
+  "granite - blue pearl",
+  "granite - red",
+  "hp 3d hr cb pa 12 (with hp jet fusion 580 color 3d printer)",
+  "iron - cast",
+  "iron - polished",
+  "lead - satin",
+  "leather - weathered",
+  "led (blue)",
+  "led (green)",
+  "led (red)",
+  "led - smd 3528 - 8lm (white)",
+  "led - smd 5050 - 20lm (white)",
+  "led - smd 5630 - 50lm (white)",
+  "mahogany",
+  "mirror",
+  "nickel - polished",
+  "nickel - satin",
+  "nylon 12 (with formlabs fuse 1 3d printer)",
+  "nylon 6-6 (white)",
+  "oak",
+  "oak - semigloss",
+  "orgasol\u00ae invent smooth - pa 12",
+  "pa 11 - nylon- hp 11-30 (with eos p 396 3d printer)",
+  "pa 12 - nylon - pa 603-cf (with eos p 3d printers)",
+  "pa 12 - pa 2200 - 120\u00b5m - balance (with eos 3d printers)",
+  "paek (beige)",
+  "paint - enamel glossy (black)",
+  "paint - enamel glossy (blue)",
+  "paint - enamel glossy (dark grey)",
+  "paint - enamel glossy (green)",
+  "paint - enamel glossy (grey)",
+  "paint - enamel glossy (red)",
+  "paint - enamel glossy (white)",
+  "paint - enamel glossy (yellow)",
+  "paint - metallic (black)",
+  "paint - metallic (blue)",
+  "paint - metallic (dark grey)",
+  "paint - metallic (green)",
+  "paint - metallic (red)",
+  "paint - metallic (silver)",
+  "paint - metallic (yellow)",
+  "palladium - polished",
+  "palladium - satin",
+  "paper (white)",
+  "peek",
+  "pekk - polyetherketoneketone reinforced with carbon fibers - ht-23 (with eos p 810 3d printer)",
+  "phenolic (amber)",
+  "pine",
+  "plastic - glossy (black)",
+  "plastic - glossy (blue)",
+  "plastic - glossy (green)",
+  "plastic - glossy (grey)",
+  "plastic - glossy (red)",
+  "plastic - glossy (white)",
+  "plastic - glossy (yellow)",
+  "plastic - matte (black)",
+  "plastic - matte (blue)",
+  "plastic - matte (gray)",
+  "plastic - matte (green)",
+  "plastic - matte (red)",
+  "plastic - matte (white)",
+  "plastic - matte (yellow)",
+  "plastic - translucent glossy (blue)",
+  "plastic - translucent glossy (gray)",
+  "plastic - translucent glossy (green)",
+  "plastic - translucent glossy (red)",
+  "plastic - translucent glossy (white)",
+  "plastic - translucent glossy (yellow)",
+  "plastic - translucent matte (blue)",
+  "plastic - translucent matte (gray)",
+  "plastic - translucent matte (green)",
+  "plastic - translucent matte (red)",
+  "plastic - translucent matte (white)",
+  "plastic - translucent matte (yellow)",
+  "platinum - polished",
+  "polycarbonate (bronze)",
+  "polycarbonate (clear)",
+  "polymide (kapton)",
+  "polystyrene",
+  "polyurethane",
+  "powder coat (black)",
+  "powder coat - rough (black)",
+  "rilsan invent natural - pa 11",
+  "rubber - hard",
+  "rubber - soft",
+  "silicone (white)",
+  "silver - polished",
+  "silver - satin",
+  "stainless steel - brushed linear long",
+  "stainless steel - polished",
+  "stainless steel - satin",
+  "steel - cast",
+  "steel - galvanized (small)",
+  "steel - rough",
+  "steel - satin",
+  "surface - glossy",
+  "surface - matte",
+  "titanium - polished",
+  "titanium - satin",
+  "tough 2000 (with formlabs sla 3d printers)",
+  "walnut",
+  "water - calm sea",
+  "water - clear",
+  "water - swimming pool",
+  "water - wavy sea",
+  "wax (natural)",
+  "wax (red)",
+  "wax (white)"
+ ],
+ "material_names": [
+  "60sn40pb",
+  "63sn37pb",
+  "abs plastic",
+  "acetal resin, black",
+  "acetal resin, white",
+  "acrylic",
+  "acrylic, clear",
+  "air",
+  "alumina (al2o3)",
+  "aluminum",
+  "aluminum - high-strength alloy",
+  "aluminum - moderate-strength alloy",
+  "aluminum - pure (low-strength)",
+  "aluminum 1100-h14",
+  "aluminum 1100-h18",
+  "aluminum 1100-o",
+  "aluminum 2014-t4",
+  "aluminum 2014-t6",
+  "aluminum 3003-h12",
+  "aluminum 3003-h14",
+  "aluminum 3003-h16",
+  "aluminum 3003-o",
+  "aluminum 3004-h32",
+  "aluminum 3004-h34",
+  "aluminum 3004-h38",
+  "aluminum 3004-o",
+  "aluminum 3105-h12",
+  "aluminum 3105-h14",
+  "aluminum 3105-h16",
+  "aluminum 3105-h18",
+  "aluminum 3105-o",
+  "aluminum 5005",
+  "aluminum 5005-h12",
+  "aluminum 5005-h14",
+  "aluminum 5005-h16",
+  "aluminum 5005-h18",
+  "aluminum 5005-h38",
+  "aluminum 5005-o",
+  "aluminum 5052",
+  "aluminum 5052 h32",
+  "aluminum 5052-h34",
+  "aluminum 5052-h36",
+  "aluminum 5052-h38",
+  "aluminum 5052-o",
+  "aluminum 5083 87 cold formed",
+  "aluminum 5454 0 cold formed",
+  "aluminum 6061",
+  "aluminum 6061 t6 0 cold formed",
+  "aluminum 6061 t6 80 hot formed",
+  "aluminum 6061, welded",
+  "aluminum 6061-ahc",
+  "aluminum 6061-o",
+  "aluminum 7075",
+  "aluminum 7175 t73 0 hot formed",
+  "aluminum a356 t6",
+  "aluminum alsi10mg",
+  "aluminum nitride (aln)",
+  "aluminum, anodized blue",
+  "aluminum, anodized red",
+  "aluminum, anodized silver",
+  "argon",
+  "ash",
+  "bamboo",
+  "beryllium oxide (beo)",
+  "birch",
+  "brass",
+  "brass, soft yellow",
+  "brass, soft yellow, welded",
+  "bronze",
+  "bronze, architectural",
+  "bronze, cast",
+  "bronze, soft tin",
+  "canvas",
+  "carpet",
+  "cfrp",
+  "cherry",
+  "cobalt chrome",
+  "copper",
+  "copper - high-strength alloy",
+  "copper - pure (low-strength)",
+  "copper, alloy",
+  "copper, cast",
+  "copper, patina",
+  "copper, wrought",
+  "discrete component",
+  "douglas fir",
+  "epoxy resin",
+  "epx 150 - air baked (with carbon m2 m3 l1 3d printers)",
+  "epx 82 (with carbon m2 m3 l1 3d printers)",
+  "epx 86fr (with carbon m2 m3 l1 3d printers)",
+  "fabric",
+  "fieldstone",
+  "fr4",
+  "gfrp",
+  "glass",
+  "glass, bronze glazing",
+  "glass, bronze glazing, low e",
+  "glass, cast, clear",
+  "glass, cast, gray",
+  "glass, clear glazing",
+  "glass, clear glazing, low e",
+  "glass, clear glazing, tempered",
+  "glass, frosted",
+  "gold",
+  "granite, cut, polished",
+  "granite, cut, rough",
+  "hp 3d hr cb pa 12 (with hp jet fusion 580 color 3d printer)",
+  "inconel 625",
+  "inconel 718",
+  "inconel 718 plus",
+  "iron, cast",
+  "iron, ductile",
+  "iron, gray",
+  "iron, gray cast astm a48 grade 20",
+  "iron, gray cast astm a48 grade 25",
+  "iron, gray cast astm a48 grade 30",
+  "iron, gray cast astm a48 grade 35",
+  "iron, gray cast astm a48 grade 40",
+  "iron, gray cast astm a48 grade 50",
+  "iron, gray cast astm a48 grade 60",
+  "iron, malleable",
+  "iron, wrought",
+  "jarrah",
+  "laminate, blue, matte",
+  "laminate, red, matte",
+  "laminate, white, matte",
+  "laminated veneer lumber",
+  "lauan, meranti",
+  "lcp plastic",
+  "lead",
+  "leather, weathered",
+  "limestone",
+  "linen, beige",
+  "linen, white",
+  "magnesium",
+  "magnesium az63a",
+  "magnesium az91e t6",
+  "mahogany",
+  "maple",
+  "marble",
+  "mdf medium density fiberboard",
+  "mirror",
+  "nickel-copper alloy 400",
+  "nitrogen",
+  "nylon 12 (with formlabs fuse 1 3d printer)",
+  "nylon 6",
+  "nylon 6/6",
+  "nylon, molybdenum disulphide",
+  "oak, red",
+  "oak, white",
+  "orgasol\u00ae invent smooth - pa 12",
+  "orgasol\u00ae\u00a0invent\u00a0smooth\u00a0-\u00a0pa\u00a012",
+  "oriented strand board",
+  "oxygen",
+  "pa 11 - nylon- hp 11-30 (with eos p 396 3d printer)",
+  "pa 12 - nylon - pa 603-cf (with eos p 3d printers)",
+  "pa 12 - pa 2200 - 120\u00b5m - balance (with eos 3d printers)",
+  "paek plastic",
+  "palladium",
+  "paper",
+  "particleboard",
+  "pbt plastic",
+  "pc/abs plastic",
+  "peek",
+  "pekk - polyetherketoneketone reinforced with carbon fibers - ht-23 (with eos p 810 3d printer)",
+  "pet plastic",
+  "phenolic resin",
+  "pine",
+  "pine, radiata",
+  "pine, scots",
+  "pine, southern",
+  "plastic",
+  "plastic, opaque black",
+  "plastic, opaque white",
+  "plastic, transparent",
+  "platinum",
+  "plywood, finish",
+  "plywood, sheathing",
+  "pmma plastic",
+  "polycarbonate, bronze",
+  "polycarbonate, clear",
+  "polyethylene, high density",
+  "polyethylene, low density",
+  "polyisocyanate",
+  "polyisocyanurate",
+  "polymide (kapton)",
+  "polypropylene",
+  "polystyrene",
+  "polystyrene, expanded",
+  "polystyrene, high impact",
+  "polytetrafluoroethylene",
+  "polyurethane foam",
+  "poplar",
+  "porcelain",
+  "porcelain, glazed",
+  "pps plastic",
+  "ptfe",
+  "pvc, flexible",
+  "pvc, unplasticized",
+  "pvc-piping",
+  "redwood",
+  "rilsan invent natural - pa 11",
+  "rubber",
+  "rubber, black",
+  "rubber, butyl",
+  "rubber, natural",
+  "rubber, nitrile",
+  "rubber, silicone",
+  "rubble",
+  "san plastic",
+  "siding, clapboard",
+  "silicon nitride",
+  "silver",
+  "slate",
+  "softwood, finish",
+  "softwood, lumber",
+  "solid surface countertop",
+  "spruce",
+  "stainless steel",
+  "stainless steel 17-4 ph",
+  "stainless steel 316l",
+  "stainless steel aisi 202",
+  "stainless steel aisi 302",
+  "stainless steel aisi 304",
+  "stainless steel aisi 309",
+  "stainless steel aisi 310",
+  "stainless steel aisi 317",
+  "stainless steel aisi 405",
+  "stainless steel aisi 430",
+  "stainless steel aisi 440c, welded",
+  "stainless steel aisi 446",
+  "stainless steel, 440c",
+  "stainless steel, austenitic",
+  "stainless steel, brushed",
+  "stainless steel, polished",
+  "steel",
+  "steel - carbon steel for pressure vessels",
+  "steel - high-strength structural",
+  "steel - high-strength, low-alloy",
+  "steel - stainless",
+  "steel - standard structural",
+  "steel aisi 1006 85 hr",
+  "steel aisi 1006 85b hr",
+  "steel aisi 1008 91 hr",
+  "steel aisi 1015",
+  "steel aisi 1015 80 norm",
+  "steel aisi 1018 106 hr",
+  "steel aisi 1018 118 qt",
+  "steel aisi 1018 209 qt",
+  "steel aisi 1020 107 hr",
+  "steel aisi 1020 108 anld",
+  "steel aisi 1022",
+  "steel aisi 1030 128 hr",
+  "steel aisi 1030 128a hr",
+  "steel aisi 1045 225 anld",
+  "steel aisi 1045 390 qt",
+  "steel aisi 1045 450 qt",
+  "steel aisi 1045 500 qt",
+  "steel aisi 1045 595 qt",
+  "steel aisi 1045 705 qt",
+  "steel aisi 1045 hv hr",
+  "steel aisi 1050",
+  "steel aisi 1051",
+  "steel aisi 1052",
+  "steel aisi 1053",
+  "steel aisi 1054",
+  "steel aisi 1055",
+  "steel aisi 1056",
+  "steel aisi 1057",
+  "steel aisi 1058",
+  "steel aisi 1059",
+  "steel aisi 1060",
+  "steel aisi 1061",
+  "steel aisi 1080 371 qt",
+  "steel aisi 1080 410 qt",
+  "steel aisi 1080 421 aust",
+  "steel aisi 1522 289 hr",
+  "steel aisi 1522 304 hr",
+  "steel aisi 1541 362 qt",
+  "steel aisi 1561 234 hr",
+  "steel aisi 4130 259 qt",
+  "steel aisi 4130 366 qt",
+  "steel aisi 4142 380 qt",
+  "steel aisi 4142 400 qt",
+  "steel aisi 4142 450 qt",
+  "steel aisi 4142 450a qt",
+  "steel aisi 4142 475 qt",
+  "steel aisi 4142 475a qt",
+  "steel aisi 4142 560 qt",
+  "steel aisi 4142 670 qt",
+  "steel aisi 4340 242 hr",
+  "steel aisi 4340 350a qt",
+  "steel aisi 4340 350b qt",
+  "steel aisi 4340 350c qt",
+  "steel aisi 4340 409 qt",
+  "steel aisi 5160 434 qt",
+  "steel aisi 5210 517 h",
+  "steel aisi 8630 254 norm",
+  "steel aisi 8640 361 qt",
+  "steel aisi 9262 260 norm",
+  "steel aisi 9262 271 qt",
+  "steel astm a242",
+  "steel astm a36",
+  "steel astm a53",
+  "steel astm a572",
+  "steel astm a913",
+  "steel, alloy",
+  "steel, carbon",
+  "steel, cast",
+  "steel, chrome plated",
+  "steel, galvanized",
+  "steel, high strength, low alloy",
+  "steel, man-ten",
+  "steel, mild",
+  "steel, mild, welded",
+  "steel, non-alloy",
+  "steel, paint finish, blue",
+  "steel, paint finish, dark gray",
+  "steel, paint finish, red",
+  "steel, rqc100",
+  "steel, wrought",
+  "stone",
+  "teak",
+  "thermoplastic resin",
+  "tin (sn)",
+  "tin-aluminium-copper (sn-ag-cu)",
+  "titanium",
+  "titanium - high-strength alloy",
+  "titanium - pure (low-strength)",
+  "titanium 6al-4v",
+  "tough 2000 (with formlabs sla 3d printers)",
+  "travertine",
+  "uhmw, black",
+  "uhmw, white",
+  "walnut",
+  "water",
+  "wood",
+  "wood (oak)",
+  "wood flooring",
+  "zinc"
+ ],
+ "bodies": {
+  "Top Shell:1 / Top Shell": {
+   "volume_mm3": 18767.88,
+   "solid": true,
+   "bbox_mm": [
+    [
+     -49.0,
+     -32.0,
+     5.5
+    ],
+    [
+     49.0,
+     52.0,
+     29.58
+    ]
+   ]
+  },
+  "Light Ring:1 / Light Ring": {
+   "volume_mm3": 3393.14,
+   "solid": true,
+   "bbox_mm": [
+    [
+     -49.0,
+     -32.0,
+     1.5
+    ],
+    [
+     49.0,
+     52.0,
+     5.5
+    ]
+   ]
+  },
+  "Bottom Tray:1 / Bottom Tray": {
+   "volume_mm3": 16116.86,
+   "solid": true,
+   "bbox_mm": [
+    [
+     -49.0,
+     -32.0,
+     0.0
+    ],
+    [
+     49.0,
+     52.0,
+     12.98
+    ]
+   ]
+  },
+  "Knob:1 / Knob": {
+   "volume_mm3": 4301.99,
+   "solid": true,
+   "bbox_mm": [
+    [
+     -38.57,
+     22.35,
+     27.1
+    ],
+    [
+     -18.58,
+     44.4,
+     45.76
+    ]
+   ]
+  },
+  "Knob:2 / Knob": {
+   "volume_mm3": 4301.99,
+   "solid": true,
+   "bbox_mm": [
+    [
+     18.58,
+     22.35,
+     27.1
+    ],
+    [
+     38.57,
+     44.4,
+     45.76
+    ]
+   ]
+  },
+  "Side Buttons:1 / Button L1": {
+   "volume_mm3": 168.58,
+   "solid": true,
+   "bbox_mm": [
+    [
+     -50.2,
+     19.53,
+     10.31
+    ],
+    [
+     -46.2,
+     31.48,
+     17.17
+    ]
+   ]
+  },
+  "Side Buttons:1 / Button L2": {
+   "volume_mm3": 168.58,
+   "solid": true,
+   "bbox_mm": [
+    [
+     -50.2,
+     5.67,
+     8.33
+    ],
+    [
+     -46.2,
+     17.62,
+     15.19
+    ]
+   ]
+  },
+  "Side Buttons:1 / Button System": {
+   "volume_mm3": 223.68,
+   "solid": true,
+   "bbox_mm": [
+    [
+     46.2,
+     6.65,
+     6.76
+    ],
+    [
+     50.2,
+     16.65,
+     16.76
+    ]
+   ]
+  },
+  "OLED Lens:1 / OLED Lens": {
+   "volume_mm3": 416.62,
+   "solid": true,
+   "bbox_mm": [
+    [
+     -13.9,
+     26.97,
+     24.46
+    ],
+    [
+     13.9,
+     42.75,
+     27.62
+    ]
+   ]
+  },
+  "Switch Plate:1 / Switch Plate": {
+   "volume_mm3": 2814.0,
+   "solid": true,
+   "bbox_mm": [
+    [
+     -42.0,
+     -21.21,
+     14.03
+    ],
+    [
+     42.0,
+     19.59,
+     21.29
+    ]
+   ]
+  },
+  "Keycaps (ref):1 / Keycap front 3": {
+   "volume_mm3": 2301.06,
+   "solid": true,
+   "bbox_mm": [
+    [
+     0.53,
+     -18.69,
+     22.43
+    ],
+    [
+     18.52,
+     -0.87,
+     34.02
+    ]
+   ]
+  },
+  "Keycaps (ref):1 / Keycap front 1": {
+   "volume_mm3": 2301.06,
+   "solid": true,
+   "bbox_mm": [
+    [
+     -37.58,
+     -18.69,
+     22.43
+    ],
+    [
+     -19.57,
+     -0.87,
+     34.02
+    ]
+   ]
+  },
+  "Keycaps (ref):1 / Keycap back 4": {
+   "volume_mm3": 2301.06,
+   "solid": true,
+   "bbox_mm": [
+    [
+     19.57,
+     0.17,
+     25.12
+    ],
+    [
+     37.58,
+     17.99,
+     36.71
+    ]
+   ]
+  },
+  "Keycaps (ref):1 / Keycap back 2": {
+   "volume_mm3": 2301.06,
+   "solid": true,
+   "bbox_mm": [
+    [
+     -18.52,
+     0.17,
+     25.12
+    ],
+    [
+     -0.52,
+     17.99,
+     36.71
+    ]
+   ]
+  },
+  "Keycaps (ref):1 / Keycap back 3": {
+   "volume_mm3": 2301.06,
+   "solid": true,
+   "bbox_mm": [
+    [
+     0.53,
+     0.17,
+     25.12
+    ],
+    [
+     18.52,
+     17.99,
+     36.71
+    ]
+   ]
+  },
+  "Keycaps (ref):1 / Keycap back 1": {
+   "volume_mm3": 2301.06,
+   "solid": true,
+   "bbox_mm": [
+    [
+     -37.58,
+     0.17,
+     25.12
+    ],
+    [
+     -19.57,
+     17.99,
+     36.71
+    ]
+   ]
+  },
+  "Keycaps (ref):1 / Keycap front 2": {
+   "volume_mm3": 2301.06,
+   "solid": true,
+   "bbox_mm": [
+    [
+     -18.52,
+     -18.69,
+     22.43
+    ],
+    [
+     -0.52,
+     -0.87,
+     34.02
+    ]
+   ]
+  },
+  "Keycaps (ref):1 / Keycap front 4": {
+   "volume_mm3": 2301.06,
+   "solid": true,
+   "bbox_mm": [
+    [
+     19.57,
+     -18.69,
+     22.43
+    ],
+    [
+     37.58,
+     -0.87,
+     34.02
+    ]
+   ]
+  },
+  "Encoders (ref):1 / Encoder A": {
+   "volume_mm3": 1360.77,
+   "solid": true,
+   "bbox_mm": [
+    [
+     -34.58,
+     28.82,
+     17.71
+    ],
+    [
+     -22.57,
+     42.11,
+     38.81
+    ]
+   ]
+  },
+  "Encoders (ref):1 / Encoder B": {
+   "volume_mm3": 1360.77,
+   "solid": true,
+   "bbox_mm": [
+    [
+     22.57,
+     28.82,
+     17.71
+    ],
+    [
+     34.58,
+     42.11,
+     38.81
+    ]
+   ]
+  },
+  "OLED Module (ref):1 / OLED board": {
+   "volume_mm3": 834.92,
+   "solid": true,
+   "bbox_mm": [
+    [
+     -13.65,
+     21.36,
+     13.09
+    ],
+    [
+     13.65,
+     49.02,
+     26.19
+    ]
+   ]
+  },
+  "OLED Module (ref):1 / OLED glass": {
+   "volume_mm3": 669.9,
+   "solid": true,
+   "bbox_mm": [
+    [
+     -13.35,
+     25.38,
+     22.87
+    ],
+    [
+     13.35,
+     44.67,
+     26.88
+    ]
+   ]
+  },
+  "Battery (ref):1 / LiPo 1000 mAh": {
+   "volume_mm3": 9600.0,
+   "solid": true,
+   "bbox_mm": [
+    [
+     -28.0,
+     12.0,
+     2.0
+    ],
+    [
+     12.0,
+     42.0,
+     10.0
+    ]
+   ]
+  },
+  "LED Strip (ref):1 / LED Strip": {
+   "volume_mm3": 1788.98,
+   "solid": true,
+   "bbox_mm": [
+    [
+     -42.2,
+     -25.2,
+     2.0
+    ],
+    [
+     42.2,
+     45.2,
+     7.0
+    ]
+   ]
+  },
+  "Fasteners (ref):1 / H1 M2x5 wafer head": {
+   "volume_mm3": 22.78,
+   "solid": true,
+   "bbox_mm": [
+    [
+     -19.85,
+     26.99,
+     14.91
+    ],
+    [
+     -15.35,
+     31.56,
+     21.08
+    ]
+   ]
+  },
+  "Fasteners (ref):1 / H1 insert": {
+   "volume_mm3": 14.7,
+   "solid": true,
+   "bbox_mm": [
+    [
+     -19.2,
+     26.99,
+     17.38
+    ],
+    [
+     -16.0,
+     30.58,
+     20.8
+    ]
+   ]
+  },
+  "Fasteners (ref):1 / H2 M2x5 wafer head": {
+   "volume_mm3": 22.78,
+   "solid": true,
+   "bbox_mm": [
+    [
+     15.35,
+     26.99,
+     14.91
+    ],
+    [
+     19.85,
+     31.56,
+     21.08
+    ]
+   ]
+  },
+  "Fasteners (ref):1 / H2 insert": {
+   "volume_mm3": 14.7,
+   "solid": true,
+   "bbox_mm": [
+    [
+     16.0,
+     26.99,
+     17.38
+    ],
+    [
+     19.2,
+     30.58,
+     20.8
+    ]
+   ]
+  },
+  "Fasteners (ref):1 / H3 M2x5 wafer head": {
+   "volume_mm3": 22.78,
+   "solid": true,
+   "bbox_mm": [
+    [
+     -38.25,
+     -25.48,
+     7.44
+    ],
+    [
+     -33.75,
+     -20.91,
+     13.62
+    ]
+   ]
+  },
+  "Fasteners (ref):1 / H3 insert": {
+   "volume_mm3": 14.7,
+   "solid": true,
+   "bbox_mm": [
+    [
+     -37.6,
+     -25.48,
+     9.91
+    ],
+    [
+     -34.4,
+     -21.89,
+     13.33
+    ]
+   ]
+  },
+  "Fasteners (ref):1 / H4 M2x5 wafer head": {
+   "volume_mm3": 22.78,
+   "solid": true,
+   "bbox_mm": [
+    [
+     33.75,
+     -25.48,
+     7.44
+    ],
+    [
+     38.25,
+     -20.91,
+     13.62
+    ]
+   ]
+  },
+  "Fasteners (ref):1 / H4 insert": {
+   "volume_mm3": 14.7,
+   "solid": true,
+   "bbox_mm": [
+    [
+     34.4,
+     -25.48,
+     9.91
+    ],
+    [
+     37.6,
+     -21.89,
+     13.33
+    ]
+   ]
+  },
+  "Fasteners (ref):1 / ST1 M2x6 pan head": {
+   "volume_mm3": 30.21,
+   "solid": true,
+   "bbox_mm": [
+    [
+     -35.9,
+     -19.24,
+     0.79
+    ],
+    [
+     -32.1,
+     -15.25,
+     8.69
+    ]
+   ]
+  },
+  "Fasteners (ref):1 / ST2 M2x6 pan head": {
+   "volume_mm3": 30.21,
+   "solid": true,
+   "bbox_mm": [
+    [
+     32.1,
+     -19.24,
+     0.79
+    ],
+    [
+     35.9,
+     -15.25,
+     8.69
+    ]
+   ]
+  },
+  "Fasteners (ref):1 / ST3 M2x12 pan head": {
+   "volume_mm3": 42.27,
+   "solid": true,
+   "bbox_mm": [
+    [
+     -37.9,
+     24.61,
+     0.77
+    ],
+    [
+     -34.1,
+     29.2,
+     14.61
+    ]
+   ]
+  },
+  "Fasteners (ref):1 / ST4 M2x12 pan head": {
+   "volume_mm3": 42.27,
+   "solid": true,
+   "bbox_mm": [
+    [
+     34.1,
+     24.61,
+     0.77
+    ],
+    [
+     37.9,
+     29.2,
+     14.61
+    ]
+   ]
+  },
+  "Fusion_sp:1 / Body1": {
+   "volume_mm3": 24.09,
+   "solid": true,
+   "bbox_mm": [
+    [
+     -47.75,
+     -16.24,
+     8.07
+    ],
+    [
+     -42.75,
+     -8.34,
+     11.14
+    ]
+   ]
+  },
+  "C_0603_1608Metric:1 / Body1": {
+   "volume_mm3": 0.93,
+   "solid": true,
+   "bbox_mm": [
+    [
+     8.2,
+     29.32,
+     15.26
+    ],
+    [
+     9.8,
+     30.22,
+     16.17
+    ]
+   ]
+  },
+  "SOT-23-5:1 / Body1": {
+   "volume_mm3": 6.48,
+   "solid": true,
+   "bbox_mm": [
+    [
+     -3.9,
+     -18.65,
+     7.67
+    ],
+    [
+     -1.1,
+     -15.56,
+     9.62
+    ]
+   ]
+  },
+  "R_0603_1608Metric:1 / Body1": {
+   "volume_mm3": 0.54,
+   "solid": true,
+   "bbox_mm": [
+    [
+     -20.0,
+     37.63,
+     16.8
+    ],
+    [
+     -19.2,
+     39.28,
+     17.47
+    ]
+   ]
+  },
+  "C_1206_3216Metric:1 / Body1": {
+   "volume_mm3": 7.59,
+   "solid": true,
+   "bbox_mm": [
+    [
+     -13.6,
+     -17.51,
+     7.78
+    ],
+    [
+     -10.4,
+     -15.7,
+     9.59
+    ]
+   ]
+  },
+  "SOT-23-6:1 / Body1": {
+   "volume_mm3": 6.57,
+   "solid": true,
+   "bbox_mm": [
+    [
+     2.0,
+     35.31,
+     15.38
+    ],
+    [
+     4.8,
+     38.4,
+     17.32
+    ]
+   ]
+  },
+  "Mounting_Wuerth_WA-SMSI-M2_H3mm_9774030243:1 / Body1": {
+   "volume_mm3": 44.56,
+   "solid": true,
+   "bbox_mm": [
+    [
+     31.83,
+     -20.65,
+     5.98
+    ],
+    [
+     36.18,
+     -15.72,
+     10.95
+    ]
+   ]
+  },
+  "Body:1 / Body1": {
+   "volume_mm3": 10.63,
+   "solid": true,
+   "bbox_mm": [
+    [
+     -30.18,
+     -4.41,
+     10.33
+    ],
+    [
+     -26.97,
+     -1.38,
+     12.48
+    ]
+   ]
+  },
+  "Pin1:1 / Body1": {
+   "volume_mm3": 0.14,
+   "solid": true,
+   "bbox_mm": [
+    [
+     -31.52,
+     -3.98,
+     11.15
+    ],
+    [
+     -30.18,
+     -3.29,
+     11.4
+    ]
+   ]
+  },
+  "Pin2:1 / Body1": {
+   "volume_mm3": 0.13,
+   "solid": true,
+   "bbox_mm": [
+    [
+     -31.52,
+     -2.5,
+     11.36
+    ],
+    [
+     -30.18,
+     -1.8,
+     11.61
+    ]
+   ]
+  },
+  "Pin3:1 / Body1": {
+   "volume_mm3": 0.14,
+   "solid": true,
+   "bbox_mm": [
+    [
+     -26.97,
+     -3.98,
+     11.15
+    ],
+    [
+     -25.63,
+     -3.29,
+     11.4
+    ]
+   ]
+  },
+  "Pin4:1 / Body1": {
+   "volume_mm3": 0.14,
+   "solid": true,
+   "bbox_mm": [
+    [
+     -26.97,
+     -2.5,
+     11.36
+    ],
+    [
+     -25.63,
+     -1.8,
+     11.61
+    ]
+   ]
+  },
+  "Crystal_SMD_3215-2Pin_3.2x1.5mm:1 / Body1": {
+   "volume_mm3": 3.97,
+   "solid": true,
+   "bbox_mm": [
+    [
+     11.2,
+     30.06,
+     15.24
+    ],
+    [
+     14.4,
+     31.67,
+     16.38
+    ]
+   ]
+  },
+  "JST_SH_SM03B-SRSS-TB_1x03-1MP_P1.00mm_Horizontal:1 / Body1": {
+   "volume_mm3": 37.84,
+   "solid": true,
+   "bbox_mm": [
+    [
+     -20.53,
+     -21.07,
+     5.93
+    ],
+    [
+     -15.58,
+     -15.7,
+     9.57
+    ]
+   ]
+  },
+  "SW_SPST_PTS810:1 / Body1": {
+   "volume_mm3": 26.83,
+   "solid": true,
+   "bbox_mm": [
+    [
+     -2.3,
+     19.52,
+     12.18
+    ],
+    [
+     2.3,
+     23.04,
+     15.11
+    ]
+   ]
+  },
+  "Fuse_1206_3216Metric:1 / Body1": {
+   "volume_mm3": 2.61,
+   "solid": true,
+   "bbox_mm": [
+    [
+     -9.6,
+     45.85,
+     17.87
+    ],
+    [
+     -6.4,
+     47.51,
+     18.64
+    ]
+   ]
+  },
+  "Raytac_MDBT50Q:1 / Body1": {
+   "volume_mm3": 130.2,
+   "solid": true,
+   "bbox_mm": [
+    [
+     7.75,
+     33.13,
+     15.81
+    ],
+    [
+     18.25,
+     48.58,
+     18.79
+    ]
+   ]
+  },
+  "Raytac_MDBT50Q:1 / Body2": {
+   "volume_mm3": 0.02,
+   "solid": true,
+   "bbox_mm": [
+    [
+     13.0,
+     47.03,
+     16.51
+    ],
+    [
+     15.0,
+     48.02,
+     16.66
+    ]
+   ]
+  },
+  "Raytac_MDBT50Q:1 / Body3": {
+   "volume_mm3": 10.0,
+   "solid": true,
+   "bbox_mm": [
+    [
+     8.5,
+     46.85,
+     16.52
+    ],
+    [
+     16.5,
+     48.02,
+     17.9
+    ]
+   ]
+  },
+  "Raytac_MDBT50Q:1 / Body4": {
+   "volume_mm3": 138.08,
+   "solid": true,
+   "bbox_mm": [
+    [
+     7.95,
+     33.39,
+     14.64
+    ],
+    [
+     18.05,
+     44.84,
+     17.44
+    ]
+   ]
+  },
+  "deck8_PCB:1 / Body1": {
+   "volume_mm3": 9802.87,
+   "solid": true,
+   "bbox_mm": [
+    [
+     -46.8,
+     -26.94,
+     8.14
+    ],
+    [
+     46.0,
+     48.51,
+     20.38
+    ]
+   ]
+  },
+  "KiCad envelopes:1 / J1 USB_C_Receptacle_HRO_TYP": {
+   "volume_mm3": 212.75,
+   "solid": true,
+   "bbox_mm": [
+    [
+     -4.47,
+     42.24,
+     14.65
+    ],
+    [
+     4.47,
+     49.93,
+     18.9
+    ]
+   ]
+  },
+  "KiCad envelopes:1 / J2 plug": {
+   "volume_mm3": 142.06,
+   "solid": true,
+   "bbox_mm": [
+    [
+     16.05,
+     19.17,
+     9.15
+    ],
+    [
+     20.15,
+     26.18,
+     15.48
+    ]
+   ]
+  },
+  "KiCad envelopes:1 / J2 JST_PH_S2B-PH-SM4-TB_1x0": {
+   "volume_mm3": 330.22,
+   "solid": true,
+   "bbox_mm": [
+    [
+     20.2,
+     18.38,
+     9.03
+    ],
+    [
+     27.8,
+     26.98,
+     15.59
+    ]
+   ]
+  },
+  "KiCad envelopes:1 / J4 plug": {
+   "volume_mm3": 67.11,
+   "solid": true,
+   "bbox_mm": [
+    [
+     -24.18,
+     -21.82,
+     5.84
+    ],
+    [
+     -20.67,
+     -14.96,
+     9.67
+    ]
+   ]
+  },
+  "KiCad envelopes:1 / K1 SW_MX_Hotswap_Kailh_1u_N": {
+   "volume_mm3": 105.82,
+   "solid": true,
+   "bbox_mm": [
+    [
+     -33.17,
+     4.4,
+     10.66
+    ],
+    [
+     -22.77,
+     10.1,
+     13.26
+    ]
+   ]
+  },
+  "KiCad envelopes:1 / K2 SW_MX_Hotswap_Kailh_1u_N": {
+   "volume_mm3": 105.82,
+   "solid": true,
+   "bbox_mm": [
+    [
+     -14.12,
+     4.4,
+     10.66
+    ],
+    [
+     -3.73,
+     10.1,
+     13.26
+    ]
+   ]
+  },
+  "KiCad envelopes:1 / K3 SW_MX_Hotswap_Kailh_1u_N": {
+   "volume_mm3": 105.82,
+   "solid": true,
+   "bbox_mm": [
+    [
+     4.93,
+     4.4,
+     10.66
+    ],
+    [
+     15.33,
+     10.1,
+     13.26
+    ]
+   ]
+  },
+  "KiCad envelopes:1 / K4 SW_MX_Hotswap_Kailh_1u_N": {
+   "volume_mm3": 105.82,
+   "solid": true,
+   "bbox_mm": [
+    [
+     23.98,
+     4.4,
+     10.66
+    ],
+    [
+     34.38,
+     10.1,
+     13.26
+    ]
+   ]
+  },
+  "KiCad envelopes:1 / K5 SW_MX_Hotswap_Kailh_1u_N": {
+   "volume_mm3": 105.82,
+   "solid": true,
+   "bbox_mm": [
+    [
+     -33.17,
+     -14.46,
+     7.97
+    ],
+    [
+     -22.77,
+     -8.76,
+     10.58
+    ]
+   ]
+  },
+  "KiCad envelopes:1 / K6 SW_MX_Hotswap_Kailh_1u_N": {
+   "volume_mm3": 105.82,
+   "solid": true,
+   "bbox_mm": [
+    [
+     -14.12,
+     -14.46,
+     7.97
+    ],
+    [
+     -3.73,
+     -8.76,
+     10.58
+    ]
+   ]
+  },
+  "KiCad envelopes:1 / K7 SW_MX_Hotswap_Kailh_1u_N": {
+   "volume_mm3": 105.82,
+   "solid": true,
+   "bbox_mm": [
+    [
+     4.93,
+     -14.46,
+     7.97
+    ],
+    [
+     15.33,
+     -8.76,
+     10.58
+    ]
+   ]
+  },
+  "KiCad envelopes:1 / K8 SW_MX_Hotswap_Kailh_1u_N": {
+   "volume_mm3": 105.82,
+   "solid": true,
+   "bbox_mm": [
+    [
+     23.98,
+     -14.46,
+     7.97
+    ],
+    [
+     34.38,
+     -8.76,
+     10.58
+    ]
+   ]
+  },
+  "KiCad envelopes:1 / SW3 SW_Push_1P1T-MP_NO_Horiz": {
+   "volume_mm3": 53.39,
+   "solid": true,
+   "bbox_mm": [
+    [
+     -46.05,
+     23.03,
+     11.68
+    ],
+    [
+     -42.66,
+     27.98,
+     15.77
+    ]
+   ]
+  },
+  "KiCad envelopes:1 / SW4 SW_Push_1P1T-MP_NO_Horiz": {
+   "volume_mm3": 53.39,
+   "solid": true,
+   "bbox_mm": [
+    [
+     -46.05,
+     9.17,
+     9.7
+    ],
+    [
+     -42.66,
+     14.12,
+     13.8
+    ]
+   ]
+  },
+  "KiCad envelopes:1 / SW5 SW_Push_1P1T-MP_NO_Horiz": {
+   "volume_mm3": 53.39,
+   "solid": true,
+   "bbox_mm": [
+    [
+     42.66,
+     9.17,
+     9.7
+    ],
+    [
+     46.05,
+     14.12,
+     13.8
+    ]
+   ]
+  },
+  "KiCad envelopes:1 / U2 VQFN-16-1EP_3x3mm_P0.5mm": {
+   "volume_mm3": 9.0,
+   "solid": true,
+   "bbox_mm": [
+    [
+     -14.5,
+     38.13,
+     16.3
+    ],
+    [
+     -11.5,
+     41.24,
+     17.71
+    ]
+   ]
+  }
+ },
+ "expected": {
+  "light_ring_mm3": 3393.14,
+  "tilt_deg": 8.13
+ },
+ "interference": [],
+ "contacts": [
+  {
+   "a": "Top Shell / Top Shell",
+   "b": "deck8_PCB / Body1",
+   "board_side": 1,
+   "volume_mm3": 0.38,
+   "thickness_mm": 0.016,
+   "bbox_mm": [
+    [
+     -20.1,
+     26.51,
+     17.25
+    ],
+    [
+     20.1,
+     31.46,
+     17.97
+    ]
+   ]
+  },
+  {
+   "a": "Encoders (ref) / Encoder A",
+   "b": "deck8_PCB / Body1",
+   "board_side": 1,
+   "volume_mm3": 2.87,
+   "thickness_mm": 0.02,
+   "bbox_mm": [
+    [
+     -34.58,
+     29.73,
+     17.71
+    ],
+    [
+     -22.57,
+     42.11,
+     19.5
+    ]
+   ]
+  },
+  {
+   "a": "Encoders (ref) / Encoder B",
+   "b": "deck8_PCB / Body1",
+   "board_side": 1,
+   "volume_mm3": 2.87,
+   "thickness_mm": 0.02,
+   "bbox_mm": [
+    [
+     22.57,
+     29.73,
+     17.71
+    ],
+    [
+     34.58,
+     42.11,
+     19.5
+    ]
+   ]
+  },
+  {
+   "a": "Fasteners (ref) / H1 insert",
+   "b": "deck8_PCB / Body1",
+   "board_side": 1,
+   "volume_mm3": 0.07,
+   "thickness_mm": 0.016,
+   "bbox_mm": [
+    [
+     -19.2,
+     27.41,
+     17.38
+    ],
+    [
+     -16.0,
+     30.58,
+     17.85
+    ]
+   ]
+  },
+  {
+   "a": "Fasteners (ref) / H2 insert",
+   "b": "deck8_PCB / Body1",
+   "board_side": 1,
+   "volume_mm3": 0.07,
+   "thickness_mm": 0.016,
+   "bbox_mm": [
+    [
+     16.0,
+     27.41,
+     17.38
+    ],
+    [
+     19.2,
+     30.58,
+     17.85
+    ]
+   ]
+  },
+  {
+   "a": "Fasteners (ref) / ST1 M2x6 pan head",
+   "b": "Mounting_Wuerth_WA-SMSI-M2_H3mm_9774030243 (1) / Mounting_Wuerth_WA-SMSI-M2_H3mm_9774030243 / Body1",
+   "board_side": 1,
+   "volume_mm3": 0.16,
+   "thickness_mm": 0.015,
+   "bbox_mm": [
+    [
+     -34.8,
+     -18.99,
+     6.37
+    ],
+    [
+     -33.2,
+     -17.11,
+     8.69
+    ]
+   ]
+  },
+  {
+   "a": "Fasteners (ref) / ST2 M2x6 pan head",
+   "b": "Mounting_Wuerth_WA-SMSI-M2_H3mm_9774030243 (1) / Mounting_Wuerth_WA-SMSI-M2_H3mm_9774030243 / Body1",
+   "board_side": 1,
+   "volume_mm3": 0.16,
+   "thickness_mm": 0.015,
+   "bbox_mm": [
+    [
+     33.2,
+     -18.99,
+     6.37
+    ],
+    [
+     34.8,
+     -17.11,
+     8.69
+    ]
+   ]
+  },
+  {
+   "a": "Fasteners (ref) / ST3 M2x12 pan head",
+   "b": "Mounting_Wuerth_WA-SMSI-M2_H3mm_9774030243 (1) / Mounting_Wuerth_WA-SMSI-M2_H3mm_9774030243 / Body1",
+   "board_side": 1,
+   "volume_mm3": 0.14,
+   "thickness_mm": 0.015,
+   "bbox_mm": [
+    [
+     -36.8,
+     24.61,
+     12.6
+    ],
+    [
+     -35.2,
+     26.45,
+     14.61
+    ]
+   ]
+  },
+  {
+   "a": "Fasteners (ref) / ST4 M2x12 pan head",
+   "b": "Mounting_Wuerth_WA-SMSI-M2_H3mm_9774030243 (1) / Mounting_Wuerth_WA-SMSI-M2_H3mm_9774030243 / Body1",
+   "board_side": 1,
+   "volume_mm3": 0.14,
+   "thickness_mm": 0.015,
+   "bbox_mm": [
+    [
+     35.2,
+     24.61,
+     12.6
+    ],
+    [
+     36.8,
+     26.45,
+     14.61
+    ]
+   ]
+  }
+ ],
+ "interference_board_vs_enclosure": [],
+ "interference_within_board": [],
+ "files": {
+  "step": "./mechanical/exports/deck8_assembly.step",
+  "f3d": "./mechanical/exports/deck8_assembly.f3d",
+  "Top Shell": "./mechanical/exports/stl/Top_Shell.stl",
+  "Light Ring": "./mechanical/exports/stl/Light_Ring.stl",
+  "Bottom Tray": "./mechanical/exports/stl/Bottom_Tray.stl",
+  "OLED Lens": "./mechanical/exports/stl/OLED_Lens.stl",
+  "Switch Plate": "./mechanical/exports/stl/Switch_Plate.stl",
+  "Knob": "./mechanical/exports/stl/Knob.stl",
+  "Button L1": "./mechanical/exports/stl/Button_L1.stl",
+  "Button L2": "./mechanical/exports/stl/Button_L2.stl",
+  "Button System": "./mechanical/exports/stl/Button_System.stl"
+ },
+ "images": {
+  "hero": "./mechanical/exports/view_hero.png",
+  "front_right": "./mechanical/exports/view_front_right.png",
+  "top": "./mechanical/exports/view_top.png",
+  "side": "./mechanical/exports/view_side.png",
+  "back": "./mechanical/exports/view_back.png",
+  "inside": "./mechanical/exports/view_inside.png",
+  "tray": "./mechanical/exports/view_tray.png"
+ },
+ "timeline": {
+  "count": 228,
+  "errored": []
+ },
+ "seconds": 31.46
+}

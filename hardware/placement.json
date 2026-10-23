@@ -1,0 +1,293 @@
+{
+ "units": "mm, PCB plane: origin = key-grid centre on the PCB top, +Y toward the back",
+ "source": "../mechanical/fusion/Deck8Model/Deck8Model.py",
+ "board": {
+  "half_width": 46.0,
+  "front": -28.5,
+  "back": 47.5,
+  "chamfer_back": 9.0,
+  "chamfer_front": 3.0
+ },
+ "parts": {
+  "J1": {
+   "x": 0,
+   "y": 45.7,
+   "side": "B",
+   "rot": 0,
+   "note": "opening faces the back edge"
+  },
+  "J2": {
+   "x": 24,
+   "y": 21,
+   "side": "B",
+   "rot": 0,
+   "note": "outside the battery footprint; cable entry toward the battery"
+  },
+  "SW1": {
+   "x": -46.0,
+   "y": -14.0,
+   "side": "B",
+   "rot": 0,
+   "note": "lever through the left wall"
+  },
+  "U5": {
+   "x": 13.0,
+   "y": 39.75,
+   "side": "B",
+   "rot": 0,
+   "note": "antenna end at the back edge; keep-out per Raytac"
+  },
+  "J3": {
+   "x": -9.0,
+   "y": 25.5,
+   "side": "B",
+   "rot": 0,
+   "note": "under the OLED module, clear of the keys; flash the UF2 bootloader once"
+  },
+  "SW2": {
+   "x": 0,
+   "y": 19.8,
+   "side": "B",
+   "rot": 0,
+   "note": "double-press for the bootloader"
+  },
+  "K1": {
+   "x": -28.575,
+   "y": 9.525,
+   "side": "F",
+   "rot": 0,
+   "note": "switch centre"
+  },
+  "K2": {
+   "x": -9.525,
+   "y": 9.525,
+   "side": "F",
+   "rot": 0,
+   "note": "switch centre"
+  },
+  "K3": {
+   "x": 9.525,
+   "y": 9.525,
+   "side": "F",
+   "rot": 0,
+   "note": "switch centre"
+  },
+  "K4": {
+   "x": 28.575,
+   "y": 9.525,
+   "side": "F",
+   "rot": 0,
+   "note": "switch centre"
+  },
+  "K5": {
+   "x": -28.575,
+   "y": -9.525,
+   "side": "F",
+   "rot": 0,
+   "note": "switch centre"
+  },
+  "K6": {
+   "x": -9.525,
+   "y": -9.525,
+   "side": "F",
+   "rot": 0,
+   "note": "switch centre"
+  },
+  "K7": {
+   "x": 9.525,
+   "y": -9.525,
+   "side": "F",
+   "rot": 0,
+   "note": "switch centre"
+  },
+  "K8": {
+   "x": 28.575,
+   "y": -9.525,
+   "side": "F",
+   "rot": 0,
+   "note": "switch centre"
+  },
+  "SW3": {
+   "x": -46.0,
+   "y": 24.0,
+   "side": "B",
+   "rot": 0,
+   "note": "actuator faces the left wall"
+  },
+  "SW4": {
+   "x": -46.0,
+   "y": 10.0,
+   "side": "B",
+   "rot": 0,
+   "note": "actuator faces the left wall"
+  },
+  "SW5": {
+   "x": 46.0,
+   "y": 10.0,
+   "side": "B",
+   "rot": 0,
+   "note": "actuator faces the right wall"
+  },
+  "ENC1": {
+   "x": -28.575,
+   "y": 35.0,
+   "side": "F",
+   "rot": 0,
+   "note": "knob A"
+  },
+  "ENC2": {
+   "x": 28.575,
+   "y": 35.0,
+   "side": "F",
+   "rot": 0,
+   "note": "knob B"
+  },
+  "D1": {
+   "x": -28.575,
+   "y": 14.605,
+   "side": "B",
+   "rot": 180,
+   "note": "under key 1, chain position 8"
+  },
+  "D2": {
+   "x": -9.525,
+   "y": 14.605,
+   "side": "B",
+   "rot": 180,
+   "note": "under key 2, chain position 7"
+  },
+  "D3": {
+   "x": 9.525,
+   "y": 14.605,
+   "side": "B",
+   "rot": 180,
+   "note": "under key 3, chain position 6"
+  },
+  "D4": {
+   "x": 28.575,
+   "y": 14.605,
+   "side": "B",
+   "rot": 180,
+   "note": "under key 4, chain position 5"
+  },
+  "D5": {
+   "x": -28.575,
+   "y": -4.445,
+   "side": "B",
+   "rot": 0,
+   "note": "under key 5, chain position 1"
+  },
+  "D6": {
+   "x": -9.525,
+   "y": -4.445,
+   "side": "B",
+   "rot": 0,
+   "note": "under key 6, chain position 2"
+  },
+  "D7": {
+   "x": 9.525,
+   "y": -4.445,
+   "side": "B",
+   "rot": 0,
+   "note": "under key 7, chain position 3"
+  },
+  "D8": {
+   "x": 28.575,
+   "y": -4.445,
+   "side": "B",
+   "rot": 0,
+   "note": "under key 8, chain position 4"
+  },
+  "J4": {
+   "x": -18.5,
+   "y": -20.3,
+   "side": "B",
+   "rot": 0,
+   "note": "inside the light wall loop; plug enters from the left (clears the light wall)"
+  },
+  "J5": {
+   "x": 0,
+   "y": 23.0,
+   "side": "F",
+   "rot": 0,
+   "note": "header row; module board spans Y 21-49"
+  },
+  "H1": {
+   "x": -17.6,
+   "y": 28.0,
+   "side": "F",
+   "rot": 0,
+   "note": "shell boss with heat-set insert"
+  },
+  "H2": {
+   "x": 17.6,
+   "y": 28.0,
+   "side": "F",
+   "rot": 0,
+   "note": "shell boss with heat-set insert"
+  },
+  "H3": {
+   "x": -36.0,
+   "y": -25.0,
+   "side": "F",
+   "rot": 0,
+   "note": "shell boss with heat-set insert"
+  },
+  "H4": {
+   "x": 36.0,
+   "y": -25.0,
+   "side": "F",
+   "rot": 0,
+   "note": "shell boss with heat-set insert"
+  },
+  "ST1": {
+   "x": -34.0,
+   "y": -20.0,
+   "side": "B",
+   "rot": 0,
+   "note": "tray screw"
+  },
+  "ST2": {
+   "x": 34.0,
+   "y": -20.0,
+   "side": "B",
+   "rot": 0,
+   "note": "tray screw"
+  },
+  "ST3": {
+   "x": -36.0,
+   "y": 24.0,
+   "side": "B",
+   "rot": 0,
+   "note": "tray screw"
+  },
+  "ST4": {
+   "x": 36.0,
+   "y": 24.0,
+   "side": "B",
+   "rot": 0,
+   "note": "tray screw"
+  },
+  "FID1": {
+   "x": -41.0,
+   "y": -21.0,
+   "side": "B",
+   "rot": 0,
+   "note": "assembly side"
+  },
+  "FID2": {
+   "x": 41.0,
+   "y": -21.0,
+   "side": "B",
+   "rot": 0,
+   "note": "assembly side"
+  },
+  "FID3": {
+   "x": -40.0,
+   "y": 39.0,
+   "side": "B",
+   "rot": 0,
+   "note": "assembly side"
+  }
+ }
+}

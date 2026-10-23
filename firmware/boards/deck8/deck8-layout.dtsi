@@ -1,0 +1,32 @@
+/*
+ * Physical layout for ZMK Studio and keymap tools. Units are 1/100 of a key (19.05 mm), taken from the layout
+ * table in mechanical/fusion/Deck8Model/Deck8Model.py: keys on a 19.05 mm grid, knobs 25.5 mm behind the back row,
+ * L1/L2 on the left wall, System on the right wall.
+ *
+ * Positions: 0-3 back row keys 1-4, 4-7 front row keys 5-8, 8 L1, 9 L2, 10 System, 11 knob A push, 12 knob B push.
+ */
+
+#include <physical_layouts.dtsi>
+
+/ {
+    deck8_layout: deck8_layout {
+        compatible = "zmk,physical-layout";
+        display-name = "Deck-8";
+
+        keys  //                     w   h    x    y  rot rx ry
+            = <&key_physical_attrs 100 100  100  150   0  0  0>
+            , <&key_physical_attrs 100 100  200  150   0  0  0>
+            , <&key_physical_attrs 100 100  300  150   0  0  0>
+            , <&key_physical_attrs 100 100  400  150   0  0  0>
+            , <&key_physical_attrs 100 100  100  250   0  0  0>
+            , <&key_physical_attrs 100 100  200  250   0  0  0>
+            , <&key_physical_attrs 100 100  300  250   0  0  0>
+            , <&key_physical_attrs 100 100  400  250   0  0  0>
+            , <&key_physical_attrs  50 100   25   74   0  0  0>
+            , <&key_physical_attrs  50 100   25  148   0  0  0>
+            , <&key_physical_attrs  50  50  525  173   0  0  0>
+            , <&key_physical_attrs 100 100  100   16   0  0  0>
+            , <&key_physical_attrs 100 100  400   16   0  0  0>
+            ;
+    };
+};

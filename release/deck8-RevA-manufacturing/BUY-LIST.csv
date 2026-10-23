@@ -1,0 +1,17 @@
+Item,Qty,Spec,Where / notes
+nRF52840 module,1,Raytac MDBT50Q-1MV2 (U5),"Out of stock at JLC on 24 Oct. In JLC's BOM step pick Global Sourcing for U5, or buy at Mouser/DigiKey and send it to JLC as a consigned part. Don't hand-solder it: the pads are underneath."
+Rotary encoders,2,Bourns PEC11R-4220F-S0024 (20 mm D shaft with push switch),"Mouser/DigiKey. Through-hole, you solder them (top side)."
+SMD standoffs,4,Würth 9774030243 (WA-SMSI M2 thread through, 3 mm tall),"Mouser/DigiKey. Not at LCSC. Solder on the bottom at ST1-ST4 (big pads, easy with an iron)."
+OLED module,1,"0.96 in 128x64 SSD1306 I2C, 4 pins in the order GND-VCC-SCL-SDA, board 27.3 x 27.8 mm, with its 4-pin 2.54 mm header (6 mm long side)","Check the pin order printed on the module before buying; some swap GND and VCC."
+Key switches,8,"MX-style, plate mount (3-pin is fine), LED window on top","Any brand; they go into the hot-swap sockets."
+Keycaps,8,1u MX,
+LiPo cell,1,"1000 mAh 803040 with protection board, at most 8.0 x 30 x 40 mm, JST-PH 2.0 plug","Check the plug's red wire lands on J2 pin 1 (VBAT) BEFORE plugging in. Swap the two crimps in the plug if not."
+LED strip,1,"SK6812 RGB (GRB order), 5 mm wide, 60 LEDs/m, about 293 mm = 17 LEDs (cut at a cut mark)","Runs round the light wall in the tray, LEDs facing out. The firmware expects 17 LEDs; another count is one number in the firmware."
+Strip lead,1,"JST SH 1.0 mm 3-pin pre-crimped cable (SHR-03V-S), about 100 mm","Plug end into J4; solder the other end to the strip: VLED, DIN, GND."
+Heat-set inserts,4,"M2 x 3 mm long, about 3.5-3.6 mm outside (for a 3.2 mm hole)","Into the 4 shell bosses with a soldering iron."
+Shell screws,4,"M2 x 5 WAFER head: head 4.5-5.0 mm across and 0.8 mm thick or less","Board to shell. A normal pan head is too tall at the two front ones."
+Tray screws (front),2,M2 x 6 pan head (ISO 7045),Tray to the front standoffs.
+Tray screws (back),2,M2 x 12 pan head (ISO 7045),Tray to the back standoffs.
+Rubber feet,4,"Self-adhesive, 8 mm round, 1.5-3 mm thick","In the 8.4 mm recesses under the tray, over the screws."
+OLED lens,1,"1.0 mm clear or smoked acrylic, laser cut","From 3-Enclosure/laser-cut-DXF/Deck8_OLED_Lens_1mm_acrylic.dxf. A printed lens won't be see-through."
+Programmer (one time),1,"Tag-Connect TC2030-IDC-NL cable + an SWD probe with the 10-pin 1.27 mm Cortex header (e.g. SEGGER J-Link EDU Mini)","Flashes the bootloader once through J3. After that, updates go over USB."

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="560" viewBox="0 0 680 560" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif">
+<title>Deck-8 layers from top to bottom</title>
+<desc>Keycaps and knobs, top shell, switch plate, PCB, battery, light ring and bottom tray, in order.</desc>
+<rect width="680" height="560" rx="12" fill="#ffffff"/>
+<defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#555" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+<g stroke="#444" stroke-width="0.8">
+<rect x="150" y="24" width="300" height="34" rx="6" fill="#CECBF6"/>
+<rect x="130" y="92" width="340" height="40" rx="6" fill="#D3D1C7"/>
+<rect x="140" y="166" width="320" height="22" rx="4" fill="#D3D1C7"/>
+<rect x="120" y="222" width="360" height="30" rx="4" fill="#C0DD97"/>
+<rect x="150" y="256" width="300" height="24" rx="4" fill="#9FE1CB"/>
+<rect x="170" y="316" width="260" height="34" rx="6" fill="#FAC775"/>
+<rect x="140" y="382" width="320" height="26" rx="13" fill="#F4C0D1"/>
+<rect x="120" y="442" width="360" height="38" rx="6" fill="#D3D1C7"/>
+</g>
+<g font-size="14" font-weight="500" fill="#222" text-anchor="middle" dominant-baseline="central">
+<text x="300" y="41">Keycaps and knobs</text>
+<text x="300" y="112">Top shell with screen window</text>
+<text x="300" y="177">Switch plate</text>
+<text x="300" y="237">PCB (circuit board)</text>
+<text x="300" y="333">Battery</text>
+<text x="300" y="395">Light ring</text>
+<text x="300" y="461">Bottom tray with rubber feet</text>
+</g>
+<text x="300" y="268" font-size="12" fill="#222" text-anchor="middle" dominant-baseline="central">chips, key sockets, USB-C on this side</text>
+<g stroke="#555" stroke-width="1.5" fill="none" marker-end="url(#a)">
+<line x1="300" y1="60" x2="300" y2="90"/><line x1="300" y1="134" x2="300" y2="164"/><line x1="300" y1="190" x2="300" y2="220"/>
+<line x1="300" y1="282" x2="300" y2="314"/><line x1="300" y1="352" x2="300" y2="380"/><line x1="300" y1="410" x2="300" y2="440"/>
+</g>
+<g font-size="12" fill="#444">
+<text x="500" y="41">keys click into sockets</text>
+<text x="500" y="237">knobs and screen on top</text>
+<text x="500" y="268">small parts underneath</text>
+<text x="500" y="461">screws into the board</text>
+</g>
+</svg>
