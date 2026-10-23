@@ -204,6 +204,7 @@ deck-8/
 ├── hardware/             the circuit board (KiCad 10)
 │   ├── main/             the KiCad project: open deck8.kicad_pro
 │   ├── lib/              the 4 custom footprints
+│   ├── exports/          the board as a 3D STEP file (deck8_pcb.step)
 │   ├── tools/            Python that generates, routes and checks the board and writes the fab files
 │   └── README.md         how the board was designed, routed and checked
 ├── mechanical/           the case (Autodesk Fusion)
