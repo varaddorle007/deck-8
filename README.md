@@ -2,6 +2,10 @@
 
 **An open-source 8-key macro pad with two knobs, a tiny screen and Bluetooth.** Everything is in this repo: the circuit board, the 3D-printable case, the firmware, and every file you need to order the parts.
 
+[![Watch the 30 second promo](docs/images/promo.gif)](media/deck8-promo.mp4)
+
+*Click the preview for the full 30 second video with sound.*
+
 ![Deck-8 in its case](docs/images/case-hero.png)
 
 > **Status: Rev A, designed and checked, but not yet built.** The board passes every automatic check (design rules, schematic checks, a fit check of the board in the case). The firmware compiles. But **no one has built one yet**, and the firmware has never run on real hardware. If you build one, you are the first. Please open an issue and tell us what happened, good or bad. See [Known risks](#known-risks).
@@ -207,6 +211,7 @@ deck-8/
 │   └── exports/          STEP, STL, renders and the clash-check report
 ├── firmware/             ZMK firmware: keymap, board definition, LED and battery code
 ├── release/              everything ready to upload, print and flash, plus the build guide and buy list
+├── media/                the 30 second promo video
 └── docs/                 images and the schematic PDF
 ```
 
